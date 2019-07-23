@@ -22,6 +22,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class ShowListFragment extends Fragment {
+    private static final String TYPE_SHOWS = "type";
     private RecyclerView rvCourse;
     private ProgressBar progressBar;
     private ShowlistAdapter showlistAdapter;
@@ -33,8 +34,12 @@ public class ShowListFragment extends Fragment {
     }
 
 
-    public static Fragment newInstance() {
-        return new ShowListFragment();
+    public static Fragment newInstance(String typeShows) {
+        Bundle args = new Bundle();
+        args.putString(TYPE_SHOWS,typeShows);
+        ShowListFragment fragment = new ShowListFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
@@ -68,14 +73,3 @@ public class ShowListFragment extends Fragment {
     }
 
 }
-
-    /*private String ARG_KEY = "kindShows"; // 0 = moview , 1 = TV Shows
-
-    public static ShowListFragment newInstance(List<> kindShows) {
-
-        Bundle args = new Bundle();
-        args.putParcelableArrayList();
-        ShowListFragment fragment = new ShowListFragment();
-        fragment.setArguments(args);
-        return fragment;
-    }*/

@@ -7,7 +7,7 @@ public class ShowsVideo implements Parcelable {
     protected String mTitle, mReleaseDate, mOverview;
     protected int mId, mPoster, mLogo;
 
-    public ShowsVideo(int mId, String mTitle, String mReleaseDate, String mOverview, int mPoster, int mLogo) {
+    public ShowsVideo(int mId, String mTitle, String mOverview, String mReleaseDate, int mPoster, int mLogo) {
         this.mTitle = mTitle;
         this.mReleaseDate = mReleaseDate;
         this.mOverview = mOverview;

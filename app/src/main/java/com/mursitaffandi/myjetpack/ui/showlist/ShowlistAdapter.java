@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.ShowsVideo;
-import com.mursitaffandi.myjetpack.ui.detail.DetailCourseActivity;
+import com.mursitaffandi.myjetpack.ui.detail.DetailShowActivity;
 import com.mursitaffandi.myjetpack.utils.GlideApp;
 
 import java.util.ArrayList;
@@ -48,8 +48,8 @@ public class ShowlistAdapter extends RecyclerView.Adapter<ShowlistAdapter.Academ
         holder.tvTitle.setText(getListCourses().get(position).getmTitle());
         holder.tvDate.setText(getListCourses().get(position).getmReleaseDate());
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(activity, DetailCourseActivity.class);
-            intent.putExtra(DetailCourseActivity.EXTRA_SHOW, getListCourses().get(position));
+            Intent intent = new Intent(activity, DetailShowActivity.class);
+            intent.putExtra(DetailShowActivity.EXTRA_SHOW, getListCourses().get(position).getmId());
             activity.startActivity(intent);
         });
         GlideApp.with(holder.itemView.getContext())

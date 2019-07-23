@@ -13,10 +13,10 @@ class TabsAdapter(fm: FragmentManager, internal var mNumOfTabs: Int) : FragmentS
     override fun getItem(position: Int): Fragment? {
         when (position) {
             0 -> {
-                return ShowListFragment()
+                return ShowListFragment.newInstance("movie")
             }
             1 -> {
-                return ShowListFragment()
+                return ShowListFragment.newInstance("tvShow")
             }
             else -> return null
         }

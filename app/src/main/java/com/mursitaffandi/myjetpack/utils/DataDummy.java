@@ -3,12 +3,13 @@ package com.mursitaffandi.myjetpack.utils;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.MovieEntity;
 import com.mursitaffandi.myjetpack.data.ShowsVideo;
+import com.mursitaffandi.myjetpack.data.TvShowEntity;
 
 import java.util.ArrayList;
 
 public class DataDummy {
+    public static ArrayList<ShowsVideo> generateDummyMovie() {
 
-    public static ArrayList<ShowsVideo> generateDummyMovie(){
         ArrayList<ShowsVideo> movieEntityList = new ArrayList<>();
 
         movieEntityList.add(new MovieEntity(1,
@@ -81,5 +82,32 @@ public class DataDummy {
                 R.drawable.poster_movie_infinity_war,
                 R.drawable.poster_movie_infinity_war));
         return movieEntityList;
+    }
+
+    public static ArrayList<TvShowEntity> generateDummyTvShow() {
+        ArrayList<TvShowEntity> tvShowEntityArrayList = new ArrayList<>();
+
+        tvShowEntityArrayList.add(new TvShowEntity(1,
+                "Arrow",
+                "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.",
+                "October 10, 2012",
+                R.drawable.poster_tvshow_arrow,
+                R.drawable.poster_tvshow_arrow));
+
+        tvShowEntityArrayList.add(new TvShowEntity(2,
+                "Doom Patrol",
+                "The Doom Patrol’s members each suffered horrible accidents that gave them superhuman abilities — but also left them scarred and disfigured. Traumatized and downtrodden, the team found purpose through The Chief, who brought them together to investigate the weirdest phenomena in existence — and to protect Earth from what they find.",
+                "February 15, 2019",
+                R.drawable.poster_tvshow_doom_patrol,
+                R.drawable.poster_tvshow_doom_patrol));
+
+        tvShowEntityArrayList.add(new TvShowEntity(3,
+                "Dragon Ball",
+                "Long ago in the mountains, a fighting master known as Gohan discovered a strange boy whom he named Goku. Gohan raised him and trained Goku in martial arts until he died. The young and very strong boy was on his own, but easily managed. Then one day, Goku met a teenage girl named Bulma, whose search for the dragon balls brought her to Goku's home. Together, they set off to find all seven dragon balls in an adventure.",
+                "February 26, 1986",
+                R.drawable.poster_tvshow_dragon_ball,
+                R.drawable.poster_tvshow_dragon_ball));
+
+        return tvShowEntityArrayList;
     }
 }
