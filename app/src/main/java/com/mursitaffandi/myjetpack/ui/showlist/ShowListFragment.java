@@ -22,12 +22,15 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class ShowListFragment extends Fragment {
-    private static final String TYPE_SHOWS = "type";
+    private static final String KEY_SHOWS = "type";
+
     private RecyclerView rvCourse;
     private ProgressBar progressBar;
     private ShowlistAdapter showlistAdapter;
     private ShowlistViewModel viewModel;
     private List<ShowsVideo> courses;
+    public static final String TYPE_MOVIE = "movie";
+    public static final String TYPE_TVSHOW = "tvShow";
 
     public ShowListFragment() {
         // Required empty public constructor
@@ -36,7 +39,7 @@ public class ShowListFragment extends Fragment {
 
     public static Fragment newInstance(String typeShows) {
         Bundle args = new Bundle();
-        args.putString(TYPE_SHOWS,typeShows);
+        args.putString(KEY_SHOWS,typeShows);
         ShowListFragment fragment = new ShowListFragment();
         fragment.setArguments(args);
         return fragment;
@@ -60,11 +63,14 @@ public class ShowListFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         if (getActivity() != null) {
+            String key = getArguments().getString(KEY_SHOWS);
             viewModel = ViewModelProviders.of(this).get(ShowlistViewModel.class);
-            courses = viewModel.getCourses();
+
+            if (key.equals(TYPE_MOVIE)) courses = viewModel.getMovies();
+            else courses = viewModel.getTvShows();
 
             showlistAdapter = new ShowlistAdapter(getActivity());
-            showlistAdapter.setListCourses(courses);
+            showlistAdapter.setListShows(courses, key);
 
             rvCourse.setLayoutManager(new LinearLayoutManager(getContext()));
             rvCourse.setHasFixedSize(true);

@@ -18,9 +18,10 @@ import com.mursitaffandi.myjetpack.utils.GlideApp;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShowlistAdapter extends RecyclerView.Adapter<ShowlistAdapter.AcademyViewHolder> {
+public class ShowlistAdapter extends RecyclerView.Adapter<ShowlistAdapter.ShowViewHolder> {
     private final Activity activity;
     private List<ShowsVideo> mCourses = new ArrayList<>();
+    private String type;
 
     ShowlistAdapter(Activity activity) {
         this.activity = activity;
@@ -30,26 +31,28 @@ public class ShowlistAdapter extends RecyclerView.Adapter<ShowlistAdapter.Academ
         return mCourses;
     }
 
-    void setListCourses(List<ShowsVideo> listCourses) {
-        if (listCourses == null) return;
+    void setListShows(List<ShowsVideo> shows, String type) {
+        if (shows == null) return;
         this.mCourses.clear();
-        this.mCourses.addAll(listCourses);
+        this.type = type;
+        this.mCourses.addAll(shows);
     }
 
     @NonNull
     @Override
-    public AcademyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ShowViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_shows, parent, false);
-        return new AcademyViewHolder(view);
+        return new ShowViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final AcademyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ShowViewHolder holder, int position) {
         holder.tvTitle.setText(getListCourses().get(position).getmTitle());
         holder.tvDate.setText(getListCourses().get(position).getmReleaseDate());
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(activity, DetailShowActivity.class);
-            intent.putExtra(DetailShowActivity.EXTRA_SHOW, getListCourses().get(position).getmId());
+            intent.putExtra(DetailShowActivity.EXTRA_SHOW_ID, getListCourses().get(position).getmId());
+            intent.putExtra(DetailShowActivity.EXTRA_SHOW_TYPE, type);
             activity.startActivity(intent);
         });
         GlideApp.with(holder.itemView.getContext())
@@ -64,12 +67,12 @@ public class ShowlistAdapter extends RecyclerView.Adapter<ShowlistAdapter.Academ
         return getListCourses().size();
     }
 
-    class AcademyViewHolder extends RecyclerView.ViewHolder {
+    class ShowViewHolder extends RecyclerView.ViewHolder {
         final TextView tvTitle;
         final TextView tvDate;
         final ImageView imgPoster;
 
-        AcademyViewHolder(View itemView) {
+        ShowViewHolder(View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tv_item_title);
             imgPoster = itemView.findViewById(R.id.img_show);

@@ -12,7 +12,8 @@ import com.mursitaffandi.myjetpack.data.ShowsVideo;
 import com.mursitaffandi.myjetpack.utils.GlideApp;
 
 public class DetailShowActivity extends AppCompatActivity {
-    public static final String EXTRA_SHOW = "extra_show";
+    public static final String EXTRA_SHOW_ID = "extra_show";
+    public static final String EXTRA_SHOW_TYPE = "type";
     private ImageView imagePoster;
     private TextView textTitle;
     private TextView textDate;
@@ -40,9 +41,10 @@ public class DetailShowActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            int movieId = extras.getInt(EXTRA_SHOW, 0);
-            if (movieId != 0) {
-                viewModel.setMovieId(movieId);
+            int movieId = extras.getInt(EXTRA_SHOW_ID, 0);
+            String movieType = extras.getString(EXTRA_SHOW_TYPE);
+            if (movieId != 0 && !movieType.equals(null)) {
+                viewModel.setMovieId(movieId, movieType);
                 movie = viewModel.getMovie();
                 setupComponent(movie);
             }

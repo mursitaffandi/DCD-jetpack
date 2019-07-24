@@ -8,8 +8,12 @@ import java.util.List;
 
 public class ShowlistViewModel extends ViewModel {
 
-    public List<ShowsVideo> getCourses() {
+    public List<ShowsVideo> getMovies() {
         return DataDummy.generateDummyMovie();
+    }
+
+    public List<ShowsVideo> getTvShows() {
+        return DataDummy.generateDummyTvShow();
     }
 }
 
