@@ -2,7 +2,6 @@ package com.mursitaffandi.myjetpack.ui.detail;
 
 import androidx.lifecycle.ViewModel;
 import com.mursitaffandi.myjetpack.data.ShowsVideo;
-import com.mursitaffandi.myjetpack.ui.showlist.ShowListFragment;
 import com.mursitaffandi.myjetpack.utils.DataDummy;
 
 public class DetailMovieViewModel extends ViewModel {
@@ -10,8 +9,8 @@ public class DetailMovieViewModel extends ViewModel {
     private int movieId;
     private String movieType;
 
-    public ShowsVideo getMovie() {
-        if (movieType.equals(ShowListFragment.TYPE_MOVIE))
+    public ShowsVideo getShow() {
+        if (movieType.equals("movie"))
             for (int i = 0; i < DataDummy.generateDummyMovie().size(); i++) {
                 ShowsVideo showsEntity = DataDummy.generateDummyMovie().get(i);
                 if (showsEntity.getmId() == movieId) {

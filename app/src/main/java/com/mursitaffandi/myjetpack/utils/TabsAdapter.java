@@ -3,7 +3,8 @@ package com.mursitaffandi.myjetpack.utils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import com.mursitaffandi.myjetpack.ui.showlist.ShowListFragment;
+import com.mursitaffandi.myjetpack.ui.movie.MovieListFragment;
+import com.mursitaffandi.myjetpack.ui.tvshow.TvShowListFragment;
 
 public class TabsAdapter extends FragmentStatePagerAdapter {
     private int mNumOfTabs;
@@ -17,10 +18,10 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0 :
-                return ShowListFragment.newInstance(ShowListFragment.TYPE_MOVIE);
+                return MovieListFragment.newInstance();
 
             case 1 :
-                return ShowListFragment.newInstance(ShowListFragment.TYPE_TVSHOW);
+                return TvShowListFragment.newInstance();
 
             default: return null;
         }

@@ -34,10 +34,10 @@ public class DetailShowActivity extends AppCompatActivity {
 
         viewModel = ViewModelProviders.of(this).get(DetailMovieViewModel.class);
 
-        imagePoster = (ImageView) findViewById(R.id.image_poster);
-        textTitle = (TextView) findViewById(R.id.text_title);
-        textDate = (TextView) findViewById(R.id.text_date);
-        textDescription = (TextView) findViewById(R.id.text_description);
+        imagePoster =  findViewById(R.id.image_poster);
+        textTitle =  findViewById(R.id.text_title);
+        textDate =  findViewById(R.id.text_date);
+        textDescription =  findViewById(R.id.text_description);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -45,7 +45,7 @@ public class DetailShowActivity extends AppCompatActivity {
             String movieType = extras.getString(EXTRA_SHOW_TYPE);
             if (movieId != 0 && !movieType.equals(null)) {
                 viewModel.setMovieId(movieId, movieType);
-                movie = viewModel.getMovie();
+                movie = viewModel.getShow();
                 setupComponent(movie);
             }
         }

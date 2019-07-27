@@ -2,14 +2,16 @@ package com.mursitaffandi.myjetpack.utils;
 
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.MovieEntity;
+import com.mursitaffandi.myjetpack.data.ShowsVideo;
 import com.mursitaffandi.myjetpack.data.TvShowEntity;
 
 import java.util.ArrayList;
 
-public class DataDummy {
-    public static ArrayList<MovieEntity> generateDummyMovie() {
+public class FakeDataDummy {
 
-        ArrayList<MovieEntity> movieEntityList = new ArrayList<>();
+    public static ArrayList<ShowsVideo> generateDummyMovie() {
+
+        ArrayList<ShowsVideo> movieEntityList = new ArrayList<>();
 
         movieEntityList.add(new MovieEntity(1,
                 "Alita: Battle Angel",
@@ -83,8 +85,8 @@ public class DataDummy {
         return movieEntityList;
     }
 
-    public static ArrayList<TvShowEntity> generateDummyTvShow() {
-        ArrayList<TvShowEntity> tvShowEntityArrayList = new ArrayList<>();
+    public static ArrayList<ShowsVideo> generateDummyTvShow() {
+        ArrayList<ShowsVideo> tvShowEntityArrayList = new ArrayList<>();
 
         tvShowEntityArrayList.add(new TvShowEntity(
                 1,
@@ -130,10 +132,10 @@ public class DataDummy {
                 6,
                 "The Flash",
                 "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only meta-human who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash.",
-        "October 7, 2014",
+                "October 7, 2014",
                 R.drawable.poster_tvshow_flash,
                 R.drawable.poster_tvshow_flash
-));
+        ));
         tvShowEntityArrayList.add(new TvShowEntity(
                 7,
                 "Game of Thrones",
@@ -168,4 +170,16 @@ public class DataDummy {
         ));
         return tvShowEntityArrayList;
     }
+
+    public static ShowsVideo getMovie(int movieId, String type){
+
+        for (int i = 0; i< generateDummyMovie().size();i++){
+            MovieEntity entity = (MovieEntity) generateDummyMovie().get(i);
+            if (entity.getmId() == movieId) {
+                return entity;
+            }
+        }
+        return null;
+    }
+
 }
