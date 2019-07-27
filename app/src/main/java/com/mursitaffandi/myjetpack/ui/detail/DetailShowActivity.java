@@ -43,20 +43,20 @@ public class DetailShowActivity extends AppCompatActivity {
         if (extras != null) {
             int movieId = extras.getInt(EXTRA_SHOW_ID, 0);
             String movieType = extras.getString(EXTRA_SHOW_TYPE);
-            if (movieId != 0 && !movieType.equals(null)) {
                 viewModel.setMovieId(movieId, movieType);
                 movie = viewModel.getShow();
                 setupComponent(movie);
-            }
+
         }
     }
 
     private void setupComponent(ShowsVideo movie){
         GlideApp.with(getApplicationContext())
                 .load(movie.getmPoster())
-                .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
-                        .error(R.drawable.ic_error))
+                .apply(RequestOptions.placeholderOf(movie.getmPoster())
+                        .error(movie.getmPoster()))
                 .into(imagePoster);
+        imagePoster.setTag(movie.getmPoster());
         textTitle.setText(movie.getmTitle());
         textDate.setText(movie.getmReleaseDate());
         textDescription.setText(movie.getmOverview());

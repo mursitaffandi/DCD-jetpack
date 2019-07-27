@@ -33,15 +33,14 @@ public class ShowsTest {
 
     @Test
     public void toDetailActivityTest() {
-        //onView(withId(R.id.rv_show)).check(matches(isDisplayed()));
-        Matcher<View> matcher = allOf(withText("Movies"),
+        Matcher<View> matcher = allOf(withText("Tv Shows"),
                 isDescendantOfA(withId(R.id.tab_home)));
         onView(matcher).perform(click());
-        onView(withId(R.id.rv_movie)).check(matches(isDisplayed()));
-        onView(withId(R.id.rv_movie)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
+        onView(withId(R.id.rv_tvshow)).check(matches(isDisplayed()));
+        onView(withId(R.id.rv_tvshow)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
 
         onView(withId(R.id.text_title)).check(matches(isDisplayed()));
-        onView(withId(R.id.text_title)).check(matches(withText("Alita: Battle Angel")));
+        onView(withId(R.id.text_title)).check(matches(withText("Arrow")));
     }
 
 }
