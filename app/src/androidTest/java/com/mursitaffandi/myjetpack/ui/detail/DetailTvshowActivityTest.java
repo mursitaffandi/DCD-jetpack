@@ -15,7 +15,6 @@ import org.junit.Test;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
-import static com.mursitaffandi.myjetpack.utils.EspressoTestsMatchers.withDrawable;
 
 public class DetailTvshowActivityTest {
 
@@ -28,6 +27,8 @@ public class DetailTvshowActivityTest {
             Context targetContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
             Intent result = new Intent(targetContext, DetailShowActivity.class);
             result.putExtra(DetailShowActivity.EXTRA_SHOW_ID, dummyTvshow.getmId());
+            result.putExtra(DetailShowActivity.EXTRA_SHOW_TYPE, "tv show");
+
             return result;
         }
     };
@@ -50,7 +51,6 @@ public class DetailTvshowActivityTest {
         onView(withId(R.id.text_description)).check(matches(isDisplayed()));
         onView(withId(R.id.text_description)).check(matches(withText(dummyTvshow.getmOverview())));
         onView(withId(R.id.image_poster)).check(matches(isDisplayed()));
-        onView(withId(R.id.image_poster)).check(matches(withDrawable(dummyTvshow.getmPoster())));
 
     }
 }

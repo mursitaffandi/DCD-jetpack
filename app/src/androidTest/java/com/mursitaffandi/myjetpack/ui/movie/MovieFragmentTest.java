@@ -22,6 +22,7 @@ public class MovieFragmentTest {
 
     @Before
     public void setUp() {
+
         activityRule.getActivity().setFragment(movieFragment);
     }
 

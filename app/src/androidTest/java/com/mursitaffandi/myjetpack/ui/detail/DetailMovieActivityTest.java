@@ -15,7 +15,6 @@ import org.junit.Test;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
-import static com.mursitaffandi.myjetpack.utils.EspressoTestsMatchers.withDrawable;
 
 public class DetailMovieActivityTest {
 
@@ -51,7 +50,5 @@ public class DetailMovieActivityTest {
         onView(withId(R.id.text_description)).check(matches(isDisplayed()));
         onView(withId(R.id.text_description)).check(matches(withText(dummyMovie.getmOverview())));
         onView(withId(R.id.image_poster)).check(matches(isDisplayed()));
-        onView(withId(R.id.image_poster)).check(matches(withDrawable(dummyMovie.getmPoster())));
-
     }
 }
