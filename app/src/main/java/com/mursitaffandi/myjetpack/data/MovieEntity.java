@@ -1,15 +1,28 @@
 package com.mursitaffandi.myjetpack.data;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+public class MovieEntity {
+    int mId; String mTitle; String mReleaseDate; String mLogo;
 
-public class MovieEntity extends ShowsVideo {
-
-    public MovieEntity(int mId, String mTitle, String mOverview, String mReleaseDate, int mPoster, int mLogo) {
-        super(mId,mTitle, mOverview, mReleaseDate, mPoster, mLogo);
+    public MovieEntity(int mId, String mTitle, String mReleaseDate, String mLogo) {
+        this.mId = mId;
+        this.mTitle = mTitle;
+        this.mReleaseDate = mReleaseDate;
+        this.mLogo = mLogo;
     }
 
-    protected MovieEntity(Parcel in) {
-        super(in);
+    public int getmId() {
+        return mId;
+    }
+
+    public String getmTitle() {
+        return mTitle;
+    }
+
+    public String getmReleaseDate() {
+        return mReleaseDate;
+    }
+
+    public String getmLogo() {
+        return mLogo;
     }
 }

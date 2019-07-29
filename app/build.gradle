@@ -81,5 +81,7 @@ dependencies {
     // Dependencies for Idle Resource
     implementation "androidx.test.espresso:espresso-idling-resource:$idleResourceVersion"
 
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
 
 }

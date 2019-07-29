@@ -2,7 +2,6 @@ package com.mursitaffandi.myjetpack.ui.detail;
 
 import androidx.lifecycle.ViewModel;
 import com.mursitaffandi.myjetpack.data.ShowsVideo;
-import com.mursitaffandi.myjetpack.utils.DataDummy;
 
 public class DetailMovieViewModel extends ViewModel {
     private ShowsVideo mCourse;
