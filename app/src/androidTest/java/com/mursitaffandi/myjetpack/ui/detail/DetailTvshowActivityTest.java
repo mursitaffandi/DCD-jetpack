@@ -27,7 +27,7 @@ public class DetailTvshowActivityTest {
             Context targetContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
             Intent result = new Intent(targetContext, DetailShowActivity.class);
             result.putExtra(DetailShowActivity.EXTRA_SHOW_ID, dummyTvshow.getmId());
-            result.putExtra(DetailShowActivity.EXTRA_SHOW_TYPE, "tv show");
+            result.putExtra(DetailShowActivity.EXTRA_SHOW_TYPE, "tv_show");
 
             return result;
         }
