@@ -9,12 +9,14 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.MovieEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -51,6 +53,7 @@ public class MovieListFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         rvMovie = view.findViewById(R.id.rv_movie);
         progressBar = view.findViewById(R.id.progress_bar_movie);
+
     }
 
     @Override
@@ -58,16 +61,37 @@ public class MovieListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         if (getActivity() != null) {
             viewModel = ViewModelProviders.of(this).get(MovielistViewModel.class);
-
-            movies = viewModel.getMovies();
+            viewModel.getMovies().observe(this, getmovies);
 
             movielistAdapter = new MovielistAdapter(getActivity());
+
+            rvMovie.setHasFixedSize(true);
+            rvMovie.setLayoutManager(new LinearLayoutManager(getContext()));
+            rvMovie.setAdapter(movielistAdapter);
+
+            movielistAdapter.notifyDataSetChanged();
             movielistAdapter.setListShows(movies);
 
-            rvMovie.setLayoutManager(new LinearLayoutManager(getContext()));
-            rvMovie.setHasFixedSize(true);
-            rvMovie.setAdapter(movielistAdapter);
+            viewModel.setMovies();
+            showLoading(true);
+
         }
     }
+    private Observer<ArrayList<MovieEntity>> getmovies = new Observer<ArrayList<MovieEntity>>() {
+        @Override
+        public void onChanged(ArrayList<MovieEntity> movieEntities) {
+            if (movieEntities != null) {
+                movielistAdapter.setListShows(movieEntities);
+                showLoading(false);
+            }
+        }
+    };
 
+    private void showLoading(Boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.GONE);
+        }
+    }
 }

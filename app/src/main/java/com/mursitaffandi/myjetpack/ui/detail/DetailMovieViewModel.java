@@ -9,7 +9,7 @@ public class DetailMovieViewModel extends ViewModel {
     private String movieType;
 
     public ShowsVideo getShow() {
-        if (movieType.equals("movie"))
+        /*if (movieType.equals("movie"))
             for (int i = 0; i < DataDummy.generateDummyMovie().size(); i++) {
                 ShowsVideo showsEntity = DataDummy.generateDummyMovie().get(i);
                 if (showsEntity.getmId() == movieId) {
@@ -23,7 +23,8 @@ public class DetailMovieViewModel extends ViewModel {
                     mCourse = showsEntity;
                 }
             }
-        return mCourse;
+        return mCourse;*/
+        return new ShowsVideo(1,"","","",0,0);
     }
 
     public void setMovieId(int movieId, String movieType) {

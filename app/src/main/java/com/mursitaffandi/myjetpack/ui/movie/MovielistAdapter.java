@@ -13,6 +13,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.MovieEntity;
 import com.mursitaffandi.myjetpack.ui.detail.DetailShowActivity;
+import com.mursitaffandi.myjetpack.utils.Cons;
 import com.mursitaffandi.myjetpack.utils.GlideApp;
 
 import java.util.ArrayList;
@@ -54,7 +55,7 @@ public class MovielistAdapter extends RecyclerView.Adapter<MovielistAdapter.Movi
             activity.startActivity(intent);
         });
         GlideApp.with(holder.itemView.getContext())
-                .load(getListMovie().get(position).getmLogo())
+                .load(Cons.BASE_URL_IMAGE_LOGO + getListMovie().get(position).getmLogo())
                 .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
                         .error(R.drawable.ic_error))
                 .into(holder.imgPoster);

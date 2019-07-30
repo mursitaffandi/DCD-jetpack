@@ -33,10 +33,11 @@ public class MovielistViewModel extends ViewModel {
                     for (int i = 0; i < list.length(); i++) {
                         JSONObject movieObj = list.getJSONObject(i);
                         MovieEntity movie = new MovieEntity(
-                                movieObj.getInt("id"),
+                                Integer.parseInt(movieObj.getString("id")),
                                 movieObj.getString("title"),
                                 movieObj.getString("release_date"),
-                                movieObj.getString("path"));
+                                movieObj.getString("poster_path"));
+                        movie.getmId();
                         listItems.add(movie);
                     }
                     listMovie.postValue(listItems);
