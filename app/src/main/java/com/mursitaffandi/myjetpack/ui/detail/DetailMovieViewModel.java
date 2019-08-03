@@ -1,34 +1,44 @@
 package com.mursitaffandi.myjetpack.ui.detail;
 
+import android.util.Log;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import com.mursitaffandi.myjetpack.data.ShowsVideo;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.mursitaffandi.myjetpack.data.DetailMovieG;
+import com.mursitaffandi.myjetpack.data.MovieEntity;
+import com.mursitaffandi.myjetpack.utils.Cons;
+import cz.msebera.android.httpclient.Header;
+import java.util.ArrayList;
 
 public class DetailMovieViewModel extends ViewModel {
-    private ShowsVideo mCourse;
-    private int movieId;
-    private String movieType;
+    private MutableLiveData<DetailMovieG> listMovie = new MutableLiveData<>();
 
-    public ShowsVideo getShow() {
-        /*if (movieType.equals("movie"))
-            for (int i = 0; i < DataDummy.generateDummyMovie().size(); i++) {
-                ShowsVideo showsEntity = DataDummy.generateDummyMovie().get(i);
-                if (showsEntity.getmId() == movieId) {
-                    mCourse = showsEntity;
-                }
+    void setMovies(String id) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        final ArrayList<MovieEntity> listItems = new ArrayList<>();
+        String url = Cons.BASE_URL + "tv/"+ id+ "?" + Cons.API_KEY;
+
+        client.get(url, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                String result = new String(responseBody);
+                GsonBuilder gsonBuilder = new GsonBuilder();
+                Gson gson = gsonBuilder.create();
+                listMovie.postValue(gson.fromJson(result, DetailMovieG.class));
             }
-        else
-            for (int i = 0; i < DataDummy.generateDummyTvShow().size(); i++) {
-                ShowsVideo showsEntity = DataDummy.generateDummyTvShow().get(i);
-                if (showsEntity.getmId() == movieId) {
-                    mCourse = showsEntity;
-                }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                Log.d("onFailure", error.getMessage());
             }
-        return mCourse;*/
-        return new ShowsVideo(1,"","","",0,0);
+        });
     }
 
-    public void setMovieId(int movieId, String movieType) {
-        this.movieId = movieId;
-        this.movieType = movieType;
+    LiveData<DetailMovieG> getMovies() {
+        return listMovie;
     }
 }

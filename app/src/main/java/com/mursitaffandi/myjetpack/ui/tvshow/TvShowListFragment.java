@@ -9,17 +9,24 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.mursitaffandi.myjetpack.R;
+import com.mursitaffandi.myjetpack.data.MovieEntity;
 import com.mursitaffandi.myjetpack.data.TvShowEntity;
+import com.mursitaffandi.myjetpack.ui.movie.MovielistAdapter;
+import com.mursitaffandi.myjetpack.ui.movie.MovielistViewModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 /**
  * A simple {@link Fragment} subclass.
+ *
+ *
  */
 public class TvShowListFragment extends Fragment {
 
@@ -27,7 +34,6 @@ public class TvShowListFragment extends Fragment {
     private ProgressBar progressBar;
     private TvShowlistAdapter tvShowlistAdapter;
     private TvShowlistViewModel viewModel;
-    private List<TvShowEntity> tvShowEntities;
 
     public TvShowListFragment() {
         // Required empty public constructor
@@ -58,16 +64,35 @@ public class TvShowListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         if (getActivity() != null) {
             viewModel = ViewModelProviders.of(this).get(TvShowlistViewModel.class);
-
-            tvShowEntities = viewModel.getTvShow();
+            viewModel.getTvShows().observe(this, getTvShows);
 
             tvShowlistAdapter = new TvShowlistAdapter(getActivity());
-            tvShowlistAdapter.setListShows(tvShowEntities);
 
-            rvTvshows.setLayoutManager(new LinearLayoutManager(getContext()));
             rvTvshows.setHasFixedSize(true);
+            rvTvshows.setLayoutManager(new LinearLayoutManager(getContext()));
             rvTvshows.setAdapter(tvShowlistAdapter);
+
+            viewModel.setTvShows();
+            showLoading(true);
+
         }
     }
+    private Observer<ArrayList<TvShowEntity>> getTvShows = new Observer<ArrayList<TvShowEntity>>() {
+        @Override
+        public void onChanged(ArrayList<TvShowEntity> movieEntities) {
+            if (movieEntities != null) {
+                tvShowlistAdapter.setListShows(movieEntities);
+                tvShowlistAdapter.notifyDataSetChanged();
+                showLoading(false);
+            }
+        }
+    };
 
+    private void showLoading(Boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.GONE);
+        }
+    }
 }

@@ -1,14 +1,18 @@
 package com.mursitaffandi.myjetpack.ui.detail;
 
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
-import com.mursitaffandi.myjetpack.data.ShowsVideo;
+import com.mursitaffandi.myjetpack.data.DetailMovieG;
+import com.mursitaffandi.myjetpack.utils.Cons;
 import com.mursitaffandi.myjetpack.utils.GlideApp;
 
 public class DetailShowActivity extends AppCompatActivity {
@@ -18,8 +22,8 @@ public class DetailShowActivity extends AppCompatActivity {
     private TextView textTitle;
     private TextView textDate;
     private TextView textDescription;
+    private ProgressBar progressBar;
     private DetailMovieViewModel viewModel;
-    private ShowsVideo movie;
 
 
     @Override
@@ -33,32 +37,45 @@ public class DetailShowActivity extends AppCompatActivity {
         }
 
         viewModel = ViewModelProviders.of(this).get(DetailMovieViewModel.class);
+        viewModel.getMovies().observe(this, getmovies);
 
-        imagePoster =  findViewById(R.id.image_poster);
-        textTitle =  findViewById(R.id.text_title);
-        textDate =  findViewById(R.id.text_date);
-        textDescription =  findViewById(R.id.text_description);
+        imagePoster = findViewById(R.id.image_poster);
+        textTitle = findViewById(R.id.text_title);
+        textDate = findViewById(R.id.text_date);
+        textDescription = findViewById(R.id.text_description);
+        progressBar = findViewById(R.id.progress_bar_detail);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            int movieId = extras.getInt(EXTRA_SHOW_ID, 0);
+            String movieId = Integer.toString(extras.getInt(EXTRA_SHOW_ID, 0));
             String movieType = extras.getString(EXTRA_SHOW_TYPE);
-                viewModel.setMovieId(movieId, movieType);
-                movie = viewModel.getShow();
-                setupComponent(movie);
+
+            viewModel.setMovies(movieId);
+            showLoading(true);
 
         }
     }
 
-    private void setupComponent(ShowsVideo movie){
+    private void setupComponent(DetailMovieG movie) {
         GlideApp.with(getApplicationContext())
-                .load(movie.getmPoster())
-                .apply(RequestOptions.placeholderOf(movie.getmPoster())
-                        .error(movie.getmPoster()))
+                .load(Cons.BASE_URL_IMAGE_LOGO + movie.getPosterPath())
+                .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
+                        .error(R.drawable.ic_error))
                 .into(imagePoster);
-        imagePoster.setTag(movie.getmPoster());
-        textTitle.setText(movie.getmTitle());
-        textDate.setText(movie.getmReleaseDate());
-        textDescription.setText(movie.getmOverview());
+        textTitle.setText(movie.getOriginalTitle());
+        textDate.setText(movie.getReleaseDate());
+        textDescription.setText(movie.getOverview());
     }
+
+    private void showLoading(Boolean state) {
+        if (state) {
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.GONE);
+        }
+    }
+
+    private Observer<DetailMovieG> getmovies = detailMovieG -> {
+        setupComponent(detailMovieG);
+    };
 }

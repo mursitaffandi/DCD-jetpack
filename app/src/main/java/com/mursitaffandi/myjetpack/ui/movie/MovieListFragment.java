@@ -29,7 +29,6 @@ public class MovieListFragment extends Fragment {
     private ProgressBar progressBar;
     private MovielistAdapter movielistAdapter;
     private MovielistViewModel viewModel;
-    private List<MovieEntity> movies;
 
     public MovieListFragment() {
         // Required empty public constructor
@@ -69,8 +68,6 @@ public class MovieListFragment extends Fragment {
             rvMovie.setLayoutManager(new LinearLayoutManager(getContext()));
             rvMovie.setAdapter(movielistAdapter);
 
-            movielistAdapter.notifyDataSetChanged();
-            movielistAdapter.setListShows(movies);
 
             viewModel.setMovies();
             showLoading(true);
@@ -82,6 +79,8 @@ public class MovieListFragment extends Fragment {
         public void onChanged(ArrayList<MovieEntity> movieEntities) {
             if (movieEntities != null) {
                 movielistAdapter.setListShows(movieEntities);
+                movielistAdapter.notifyDataSetChanged();
+
                 showLoading(false);
             }
         }

@@ -13,6 +13,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.TvShowEntity;
 import com.mursitaffandi.myjetpack.ui.detail.DetailShowActivity;
+import com.mursitaffandi.myjetpack.utils.Cons;
 import com.mursitaffandi.myjetpack.utils.GlideApp;
 
 import java.util.ArrayList;
@@ -45,17 +46,17 @@ public class TvShowlistAdapter extends RecyclerView.Adapter<TvShowlistAdapter.Mo
 
     @Override
     public void onBindViewHolder(@NonNull final MovieViewHolder holder, int position) {
-        holder.tvItemTitle.setText(getListTvShow().get(position).getmTitle());
-        holder.tvItemTvshowDate.setText(getListTvShow().get(position).getmReleaseDate());
+        holder.tvItemTitle.setText(getListTvShow().get(position).getOriginalName());
+        holder.tvItemTvshowDate.setText(getListTvShow().get(position).getFirstAirDate());
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(activity, DetailShowActivity.class);
-            intent.putExtra(DetailShowActivity.EXTRA_SHOW_ID, getListTvShow().get(position).getmId());
+            intent.putExtra(DetailShowActivity.EXTRA_SHOW_ID, getListTvShow().get(position).getId());
             intent.putExtra(DetailShowActivity.EXTRA_SHOW_TYPE, "tv_show");
 
             activity.startActivity(intent);
         });
         GlideApp.with(holder.itemView.getContext())
-                .load(getListTvShow().get(position).getmLogo())
+                .load(Cons.BASE_URL_IMAGE_LOGO + getListTvShow().get(position).getBackdropPath())
                 .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
                         .error(R.drawable.ic_error))
                 .into(holder.imgTvshow);
