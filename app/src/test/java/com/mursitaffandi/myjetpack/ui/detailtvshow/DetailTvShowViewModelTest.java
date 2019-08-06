@@ -42,6 +42,6 @@ public class DetailTvShowViewModelTest {
         Observer<TvshowEntity> observer = mock(Observer.class);
         viewModel.getTvShow().observeForever(observer);
 
-        verify(showRepository).getMovie(dummyTvshowId);
+        verify(showRepository).getTvShow(dummyTvshowId);
     }
 }

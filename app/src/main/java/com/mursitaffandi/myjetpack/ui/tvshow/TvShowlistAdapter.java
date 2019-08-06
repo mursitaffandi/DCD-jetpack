@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowActivity;
@@ -54,7 +55,7 @@ public class TvShowlistAdapter extends RecyclerView.Adapter<TvShowlistAdapter.Mo
 
             activity.startActivity(intent);
         });
-        GlideApp.with(holder.itemView.getContext())
+        Glide.with(holder.itemView.getContext())
                 .load(Cons.BASE_URL_IMAGE + getListTvShow().get(position).getPosterPath())
                 .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
                         .error(R.drawable.ic_error))

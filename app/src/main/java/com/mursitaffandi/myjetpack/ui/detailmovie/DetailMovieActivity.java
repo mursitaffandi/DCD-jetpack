@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProviders;
+import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
@@ -64,7 +65,7 @@ public class DetailMovieActivity extends AppCompatActivity {
     }
 
     private void setupComponent(MovieEntity movie){
-        GlideApp.with(getApplicationContext())
+        Glide.with(getApplicationContext())
                 .load(Cons.BASE_URL_IMAGE + movie.getPosterPath())
                 .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
                         .error(R.drawable.ic_error))

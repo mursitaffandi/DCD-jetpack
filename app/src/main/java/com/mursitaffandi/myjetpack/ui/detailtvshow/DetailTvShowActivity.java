@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
@@ -71,7 +72,7 @@ public class DetailTvShowActivity extends AppCompatActivity {
     }
 
     private void setupComponent(TvshowEntity tvshowEntity){
-        GlideApp.with(getApplicationContext())
+        Glide.with(getApplicationContext())
                 .load(Cons.BASE_URL_IMAGE + tvshowEntity.getPosterPath())
                 .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
                         .error(R.drawable.ic_error))
