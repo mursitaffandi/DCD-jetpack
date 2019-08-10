@@ -41,14 +41,14 @@ public class TvShowListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tvshow_list, container, false);
+        return inflater.inflate(R.layout.fragment_list_show, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvTvshows = view.findViewById(R.id.rv_tvshow);
-        progressBar = view.findViewById(R.id.progress_bar_tvshow);
+        rvTvshows = view.findViewById(R.id.rv_list_show);
+        progressBar = view.findViewById(R.id.progressbar_list_show);
     }
     @NonNull
     private static TvShowlistViewModel obtainViewModel(FragmentActivity activity) {

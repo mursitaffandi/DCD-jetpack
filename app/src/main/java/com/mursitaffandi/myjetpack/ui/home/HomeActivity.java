@@ -1,52 +1,58 @@
 package com.mursitaffandi.myjetpack.ui.home;
 
 import android.os.Bundle;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mursitaffandi.myjetpack.R;
-import com.mursitaffandi.myjetpack.utils.TabsAdapter;
+import com.mursitaffandi.myjetpack.ui.favorite.FavoritesFragment;
+import com.mursitaffandi.myjetpack.ui.listmovie.MovieListFragment;
+import com.mursitaffandi.myjetpack.ui.listtvshow.TvShowListFragment;
 
 public class HomeActivity extends AppCompatActivity {
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
-    private TabLayout.BaseOnTabSelectedListener tabChangeListener = new TabLayout.OnTabSelectedListener() {
-        @Override
-        public void onTabSelected(TabLayout.Tab tab) {
-            viewPager.setCurrentItem(tab.getPosition(), true);
+    private final String SELECTED_MENU = "selected_menu";
+    private BottomNavigationView navView;
+
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = item -> {
+        Fragment fragment = null;
+        if (item.getItemId() == R.id.action_movie) {
+            fragment = MovieListFragment.newInstance();
+        } else if (item.getItemId() == R.id.action_tvshow) {
+            fragment = TvShowListFragment.newInstance();
+        } else if (item.getItemId() == R.id.action_favorite) {
+            fragment = FavoritesFragment.newInstance();
         }
 
-        @Override
-        public void onTabUnselected(TabLayout.Tab tab) {
-
+        if (fragment != null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .replace(R.id.container, fragment)
+                    .commit();
         }
-
-        @Override
-        public void onTabReselected(TabLayout.Tab tab) {
-
-        }
+        return true;
     };
 
+
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        navView = findViewById(R.id.nav_view);
+        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        tabLayout = findViewById(R.id.tab_home);
-        viewPager = findViewById(R.id.vp_container_home);
-
-        tabLayout.addTab(tabLayout.newTab().setText("Movies"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tv Shows"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-
-        TabsAdapter tabsAdapter = new TabsAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(tabsAdapter);
-
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.addOnTabSelectedListener(tabChangeListener);
-
+        if (savedInstanceState != null) {
+            savedInstanceState.getInt(SELECTED_MENU);
+        } else {
+            navView.setSelectedItemId(R.id.action_favorite);
+        }
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(SELECTED_MENU, navView.getSelectedItemId());
+    }
 }

@@ -34,7 +34,7 @@ public class TvShowlistAdapter extends RecyclerView.Adapter<TvShowlistAdapter.Mo
     @NonNull
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_tvshows, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_show, parent, false);
         return new MovieViewHolder(view);
     }
 
@@ -74,9 +74,9 @@ public class TvShowlistAdapter extends RecyclerView.Adapter<TvShowlistAdapter.Mo
         MovieViewHolder(View itemView) {
             super(itemView);
 
-            imgTvshow = itemView.findViewById(R.id.img_tvshow);
+            imgTvshow = itemView.findViewById(R.id.item_iv_show);
             tvItemTitle = itemView.findViewById(R.id.tv_item_title);
-            tvItemTvshowDate = itemView.findViewById(R.id.tv_item_tvshow_date);
+            tvItemTvshowDate = itemView.findViewById(R.id.tv_item_date);
         }
     }
 }

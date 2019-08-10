@@ -34,7 +34,7 @@ public class MovielistAdapter extends RecyclerView.Adapter<MovielistAdapter.Movi
     @NonNull
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_shows, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_show, parent, false);
         return new MovieViewHolder(view);
     }
 
@@ -73,7 +73,7 @@ public class MovielistAdapter extends RecyclerView.Adapter<MovielistAdapter.Movi
         MovieViewHolder(View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tv_item_title);
-            imgPoster = itemView.findViewById(R.id.img_show);
+            imgPoster = itemView.findViewById(R.id.item_iv_show);
             tvDate = itemView.findViewById(R.id.tv_item_date);
         }
     }

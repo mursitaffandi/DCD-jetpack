@@ -1,6 +1,7 @@
 package com.mursitaffandi.myjetpack.ui.detailtvshow;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -14,7 +15,6 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.utils.Cons;
-import com.mursitaffandi.myjetpack.utils.GlideApp;
 import com.mursitaffandi.myjetpack.viewmodel.ViewModelFactory;
 
 public class DetailTvShowActivity extends AppCompatActivity {
@@ -25,7 +25,15 @@ public class DetailTvShowActivity extends AppCompatActivity {
     private TextView textDescription;
     private ProgressBar progressBar;
     private DetailTvShowViewModel viewModel;
-
+    private Menu menu;
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_detail, menu);
+        this.menu = menu;
+        
+        return true;
+    }
     @NonNull
     private static DetailTvShowViewModel obtainViewModel(AppCompatActivity activity) {
         // Use a Factory to inject dependencies into the ViewModel
@@ -38,7 +46,7 @@ public class DetailTvShowActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_detail);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar_detail);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);

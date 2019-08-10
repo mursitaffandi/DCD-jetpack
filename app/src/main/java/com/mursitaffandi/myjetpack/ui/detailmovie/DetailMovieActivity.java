@@ -1,9 +1,11 @@
 package com.mursitaffandi.myjetpack.ui.detailmovie;
 
+import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +26,16 @@ public class DetailMovieActivity extends AppCompatActivity {
     private TextView textDescription;
     private ProgressBar progressBar;
     private DetailMovieViewModel viewModel;
-
+    private Menu menu;
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_detail, menu);
+        this.menu = menu;
+        
+        return true;
+    }
+    
     @NonNull
     private static DetailMovieViewModel obtainViewModel(AppCompatActivity activity) {
         // Use a Factory to inject dependencies into the ViewModel
@@ -37,7 +48,7 @@ public class DetailMovieActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_detail);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar_detail);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -73,4 +84,6 @@ public class DetailMovieActivity extends AppCompatActivity {
         textDate.setText(movie.getReleaseDate());
         textDescription.setText(movie.getOverview());
     }
+    
+   
 }

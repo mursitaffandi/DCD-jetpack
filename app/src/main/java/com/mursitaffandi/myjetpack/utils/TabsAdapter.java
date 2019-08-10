@@ -3,8 +3,8 @@ package com.mursitaffandi.myjetpack.utils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import com.mursitaffandi.myjetpack.ui.listmovie.MovieListFragment;
-import com.mursitaffandi.myjetpack.ui.listtvshow.TvShowListFragment;
+import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieFragment;
+import com.mursitaffandi.myjetpack.ui.favorite.favoritestvshow.FavoritesTvshowFragment;
 
 public class TabsAdapter extends FragmentStatePagerAdapter {
     private int mNumOfTabs;
@@ -18,10 +18,10 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0 :
-                return MovieListFragment.newInstance();
+                return FavoritesMovieFragment.newInstance();
 
             case 1 :
-                return TvShowListFragment.newInstance();
+                return FavoritesTvshowFragment.newInstance();
 
             default: return null;
         }
