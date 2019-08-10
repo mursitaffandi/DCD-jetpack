@@ -3,8 +3,8 @@ package com.mursitaffandi.myjetpack.utils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import com.mursitaffandi.myjetpack.ui.movie.MovieListFragment;
-import com.mursitaffandi.myjetpack.ui.tvshow.TvShowListFragment;
+import com.mursitaffandi.myjetpack.ui.listmovie.MovieListFragment;
+import com.mursitaffandi.myjetpack.ui.listtvshow.TvShowListFragment;
 
 public class TabsAdapter extends FragmentStatePagerAdapter {
     private int mNumOfTabs;

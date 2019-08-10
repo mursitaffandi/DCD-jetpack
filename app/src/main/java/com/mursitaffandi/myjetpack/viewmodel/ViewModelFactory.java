@@ -6,11 +6,10 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.di.Injection;
-import com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieActivity;
 import com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieViewModel;
 import com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowViewModel;
-import com.mursitaffandi.myjetpack.ui.movie.MovielistViewModel;
-import com.mursitaffandi.myjetpack.ui.tvshow.TvShowlistViewModel;
+import com.mursitaffandi.myjetpack.ui.listmovie.MovielistViewModel;
+import com.mursitaffandi.myjetpack.ui.listtvshow.TvShowlistViewModel;
 
 public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
     private static volatile ViewModelFactory INSTANCE;

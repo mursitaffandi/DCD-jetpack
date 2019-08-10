@@ -14,7 +14,6 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.utils.Cons;
-import com.mursitaffandi.myjetpack.utils.GlideApp;
 import com.mursitaffandi.myjetpack.viewmodel.ViewModelFactory;
 
 public class DetailMovieActivity extends AppCompatActivity {
