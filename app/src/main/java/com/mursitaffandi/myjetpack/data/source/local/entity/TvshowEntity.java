@@ -1,6 +1,7 @@
 package com.mursitaffandi.myjetpack.data.source.local.entity;
 
 public class TvshowEntity{
+	private int id;
 	private String firstAirDate;
 	private String backdropPath;
 	private String overview;
@@ -9,7 +10,6 @@ public class TvshowEntity{
 	private double popularity;
 	private double voteAverage;
 	private String name;
-	private int id;
 	private int voteCount;
 	private String posterPath;
 

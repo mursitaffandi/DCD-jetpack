@@ -1,18 +1,40 @@
 package com.mursitaffandi.myjetpack.data.source.local.entity;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "tb_movies")
 public class MovieEntity{
-	private String overview;
-	private String originalLanguage;
-	private String originalTitle;
-	private boolean video;
-	private String title;
-	private String posterPath;
-	private String backdropPath;
-	private String releaseDate;
-	private double voteAverage;
-	private double popularity;
+	@PrimaryKey
+	@NonNull
+	@ColumnInfo(name = "id")
 	private int id;
+	@ColumnInfo(name = "title")
+	private String title;
+	@ColumnInfo(name = "overview")
+	private String overview;
+	@ColumnInfo(name = "posterPath")
+	private String posterPath;
+	@ColumnInfo(name = "releaseDate")
+	private String releaseDate;
+	
+	@ColumnInfo(name = "originalLanguage")
+	private String originalLanguage;
+	@ColumnInfo(name = "video")
+	private boolean video;
+	@ColumnInfo(name = "originalTitle")
+	private String originalTitle;
+	@ColumnInfo(name = "backdropPath")
+	private String backdropPath;
+	@ColumnInfo(name = "voteAverage")
+	private double voteAverage;
+	@ColumnInfo(name = "popularity")
+	private double popularity;
+	@ColumnInfo(name = "adult")
 	private boolean adult;
+	@ColumnInfo(name = "voteCount")
 	private int voteCount;
 
 	public MovieEntity() {
