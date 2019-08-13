@@ -26,6 +26,6 @@ import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
         }
     }
 
-    public abstract ShowsDao academyDao();
+    public abstract ShowsDao showsDao();
 
 }

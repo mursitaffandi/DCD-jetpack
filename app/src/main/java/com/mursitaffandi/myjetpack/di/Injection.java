@@ -5,6 +5,7 @@ import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.LocalRepository;
 import com.mursitaffandi.myjetpack.data.source.local.room.ShowsDatabase;
 import com.mursitaffandi.myjetpack.data.source.remote.RemoteRepository;
+import com.mursitaffandi.myjetpack.utils.AppExecutors;
 import com.mursitaffandi.myjetpack.utils.JsonHelper;
 
 public class Injection {
@@ -12,9 +13,10 @@ public class Injection {
     
         ShowsDatabase database = ShowsDatabase.getInstance(application);
     
-        LocalRepository localRepository = LocalRepository.get(database.academyDao());
+        LocalRepository localRepository = LocalRepository.getInstance(database.showsDao());
         RemoteRepository remoteRepository = RemoteRepository.getInstance(new JsonHelper(application));
-
-        return ShowRepository.getInstance(localRepository, remoteRepository);
+        AppExecutors appExecutors = new AppExecutors();
+    
+        return ShowRepository.getInstance(localRepository, remoteRepository, appExecutors);
     }
 }

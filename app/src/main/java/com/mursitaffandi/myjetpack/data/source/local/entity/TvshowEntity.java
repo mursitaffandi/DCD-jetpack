@@ -1,17 +1,44 @@
 package com.mursitaffandi.myjetpack.data.source.local.entity;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+
+@Entity(tableName = "tb_tvshows")
 public class TvshowEntity{
+	@ColumnInfo(name = "id")
 	private int id;
+	@ColumnInfo(name = "firstAirDate")
 	private String firstAirDate;
+	@ColumnInfo(name = "backdropPath")
 	private String backdropPath;
+	@ColumnInfo(name = "overview")
 	private String overview;
+	@ColumnInfo(name = "originalLanguage")
 	private String originalLanguage;
+	@ColumnInfo(name = "originalName")
 	private String originalName;
+	@ColumnInfo(name = "popularity")
 	private double popularity;
+	@ColumnInfo(name = "voteAverage")
 	private double voteAverage;
+	@ColumnInfo(name = "name")
 	private String name;
+	@ColumnInfo(name = "voteCount")
 	private int voteCount;
+	@ColumnInfo(name = "posterPath")
 	private String posterPath;
+	
+	public Boolean isBookmarked() {
+		return bookmarked;
+	}
+	
+	public void setBookmarked(Boolean bookmarked) {
+		this.bookmarked = bookmarked;
+	}
+	
+	@ColumnInfo(name = "bookmarked")
+	private boolean bookmarked = false;
 
 	public TvshowEntity() {
 	}
@@ -25,9 +52,10 @@ public class TvshowEntity{
 			double popularity,
 			double voteAverage,
 			String name,
-			int id,
+			@NonNull int id,
 			int voteCount,
-			String posterPath
+			String posterPath,
+            Boolean bookmarked
 	) {
 		this.firstAirDate = firstAirDate;
 		this.backdropPath = backdropPath;
@@ -40,6 +68,9 @@ public class TvshowEntity{
 		this.id = id;
 		this.voteCount = voteCount;
 		this.posterPath = posterPath;
+		if (bookmarked!=null){
+			this.bookmarked = bookmarked;
+		}
 	}
 
 	public void setFirstAirDate(String firstAirDate){
@@ -105,11 +136,13 @@ public class TvshowEntity{
 	public String getName(){
 		return name;
 	}
-
+	
+	@NonNull
 	public void setId(int id){
 		this.id = id;
 	}
-
+	
+	@NonNull
 	public int getId(){
 		return id;
 	}
@@ -132,19 +165,19 @@ public class TvshowEntity{
 
 	@Override
  	public String toString(){
-		return 
+		return
 			"TvshowResponse{" +
-			"first_air_date = '" + firstAirDate + '\'' + 
-			",backdrop_path = '" + backdropPath + '\'' + 
-			",overview = '" + overview + '\'' + 
-			",original_language = '" + originalLanguage + '\'' + 
-			",original_name = '" + originalName + '\'' + 
-			",popularity = '" + popularity + '\'' + 
-			",vote_average = '" + voteAverage + '\'' + 
-			",name = '" + name + '\'' + 
-			",id = '" + id + '\'' + 
-			",vote_count = '" + voteCount + '\'' + 
-			",poster_path = '" + posterPath + '\'' + 
+			"first_air_date = '" + firstAirDate + '\'' +
+			",backdrop_path = '" + backdropPath + '\'' +
+			",overview = '" + overview + '\'' +
+			",original_language = '" + originalLanguage + '\'' +
+			",original_name = '" + originalName + '\'' +
+			",popularity = '" + popularity + '\'' +
+			",vote_average = '" + voteAverage + '\'' +
+			",name = '" + name + '\'' +
+			",id = '" + id + '\'' +
+			",vote_count = '" + voteCount + '\'' +
+			",poster_path = '" + posterPath + '\'' +
 			"}";
 		}
 }

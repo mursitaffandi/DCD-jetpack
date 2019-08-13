@@ -1,6 +1,8 @@
 package com.mursitaffandi.myjetpack.data.source.remote;
 
 import android.os.Handler;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import com.mursitaffandi.myjetpack.data.source.remote.response.MovieResponse;
 import com.mursitaffandi.myjetpack.data.source.remote.response.TvshowResponse;
 import com.mursitaffandi.myjetpack.utils.EspressoIdlingResource;
@@ -25,34 +27,34 @@ public class RemoteRepository {
         return INSTANCE;
     }
 
-    public void getAllMovie(LoadMoviesCallback callback) {
+    public LiveData<ApiResponse<List<MovieResponse>>> getAllMovieAsLiveData() {
         EspressoIdlingResource.increment();
+        MutableLiveData<ApiResponse<List<MovieResponse>>> resultMovie = new MutableLiveData<>();
+    
         Handler handler = new Handler();
         handler.postDelayed(() -> {
-            callback.onAllMoviesReceived(jsonHelper.loadMovies());
-            EspressoIdlingResource.decrement();
+            resultMovie.setValue(ApiResponse.success(jsonHelper.loadMovies()));
+            if (!EspressoIdlingResource.getEspressoIdlingResource().isIdleNow()) {
+                EspressoIdlingResource.decrement();
+            }
         }, SERVICE_LATENCY_IN_MILLIS);
+    
+        return resultMovie;
     }
-
-    public void getAllTvshows(LoadTvshowsCallback callback) {
+    
+    public LiveData<ApiResponse<List<TvshowResponse>>> getAllTvshowAsLiveData() {
         EspressoIdlingResource.increment();
+        MutableLiveData<ApiResponse<List<TvshowResponse>>> resultTvshow = new MutableLiveData<>();
+        
         Handler handler = new Handler();
         handler.postDelayed(() -> {
-            callback.onAllTvshowsReceived(jsonHelper.loadTvshows());
-            EspressoIdlingResource.decrement();
+            resultTvshow.setValue(ApiResponse.success(jsonHelper.loadTvshows()));
+            if (!EspressoIdlingResource.getEspressoIdlingResource().isIdleNow()) {
+                EspressoIdlingResource.decrement();
+            }
         }, SERVICE_LATENCY_IN_MILLIS);
-    }
-
-    public interface LoadMoviesCallback {
-        void onAllMoviesReceived(List<MovieResponse> movieResponses);
-
-        void onDataNotAvailable();
-    }
-
-    public interface LoadTvshowsCallback {
-        void onAllTvshowsReceived(List<TvshowResponse> tvshowResponses);
-
-        void onDataNotAvailable();
+        
+        return resultTvshow;
     }
 }
 

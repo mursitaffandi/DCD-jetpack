@@ -36,7 +36,18 @@ public class MovieEntity{
 	private boolean adult;
 	@ColumnInfo(name = "voteCount")
 	private int voteCount;
-
+	
+	public boolean isBookmarked() {
+		return bookmarked;
+	}
+	
+	public void setBookmarked(Boolean bookmarked) {
+		this.bookmarked = bookmarked;
+	}
+	
+	@ColumnInfo(name = "bookmarked")
+	private Boolean bookmarked = false;
+	
 	public MovieEntity() {
 	}
 
@@ -51,9 +62,10 @@ public class MovieEntity{
 			String releaseDate,
 			double voteAverage,
 			double popularity,
-			int id,
+			@NonNull int id,
 			boolean adult,
-			int voteCount
+			int voteCount,
+			Boolean bookmarked
 	) {
 		this.overview = overview;
 		this.originalLanguage = originalLanguage;
@@ -68,6 +80,9 @@ public class MovieEntity{
 		this.id = id;
 		this.adult = adult;
 		this.voteCount = voteCount;
+		if (bookmarked != null) {
+			this.bookmarked = bookmarked;
+		}
 	}
 
 	public void setOverview(String overview){
@@ -149,11 +164,13 @@ public class MovieEntity{
 	public double getPopularity(){
 		return popularity;
 	}
-
+	
+	@NonNull
 	public void setId(int id){
 		this.id = id;
 	}
-
+	
+	@NonNull
 	public int getId(){
 		return id;
 	}
