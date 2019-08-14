@@ -41,12 +41,12 @@ public class MovieEntity{
 		return bookmarked;
 	}
 	
-	public void setBookmarked(Boolean bookmarked) {
+	public void setBookmarked(boolean bookmarked) {
 		this.bookmarked = bookmarked;
 	}
 	
 	@ColumnInfo(name = "bookmarked")
-	private Boolean bookmarked = false;
+	private boolean bookmarked = false;
 	
 	public MovieEntity(
 			String overview,
@@ -62,7 +62,7 @@ public class MovieEntity{
 			@NonNull int id,
 			boolean adult,
 			int voteCount,
-			Boolean bookmarked
+			boolean bookmarked
 	) {
 		this.overview = overview;
 		this.originalLanguage = originalLanguage;
