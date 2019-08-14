@@ -3,9 +3,11 @@ package com.mursitaffandi.myjetpack.data.source.local.entity;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "tb_tvshows")
 public class TvshowEntity{
+	@PrimaryKey
 	@ColumnInfo(name = "id")
 	private int id;
 	@ColumnInfo(name = "firstAirDate")
@@ -40,9 +42,6 @@ public class TvshowEntity{
 	@ColumnInfo(name = "bookmarked")
 	private boolean bookmarked = false;
 
-	public TvshowEntity() {
-	}
-
 	public TvshowEntity(
 			String firstAirDate,
 			String backdropPath,
@@ -68,9 +67,7 @@ public class TvshowEntity{
 		this.id = id;
 		this.voteCount = voteCount;
 		this.posterPath = posterPath;
-		if (bookmarked!=null){
 			this.bookmarked = bookmarked;
-		}
 	}
 
 	public void setFirstAirDate(String firstAirDate){

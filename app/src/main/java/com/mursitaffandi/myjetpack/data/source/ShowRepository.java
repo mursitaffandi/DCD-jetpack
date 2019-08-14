@@ -3,6 +3,8 @@ package com.mursitaffandi.myjetpack.data.source;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import androidx.paging.LivePagedListBuilder;
+import androidx.paging.PagedList;
 import com.mursitaffandi.myjetpack.data.source.local.LocalRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
@@ -81,7 +83,7 @@ public class ShowRepository implements ShowDataSource {
                                     response.getId(),
                                     response.isAdult(),
                                     response.getVoteCount(),
-                                    null
+                                    false
                             )
                     );
                 }
@@ -128,7 +130,7 @@ public class ShowRepository implements ShowDataSource {
                                     response.getId(),
                                     response.getVoteCount(),
                                     response.getPosterPath(),
-                                    null
+                                    false
                             )
                     );
                 }
@@ -138,25 +140,156 @@ public class ShowRepository implements ShowDataSource {
         }.asLiveData();
     }
     
+    
+    
+    
+    
+    
     @Override
-    public LiveData<Resource<List<MovieEntity>>> getAllBookmarkedMovies() {
-        return null;
+    public LiveData<Resource<PagedList<MovieEntity>>> getAllBookmarkedMovies() {
+        return new NetworkBoundResource<PagedList<MovieEntity>, List<MovieResponse>>(appExecutors) {
+            @Override
+            protected LiveData<PagedList<MovieEntity>> loadFromDB() {
+                return new LivePagedListBuilder<>(localRepository.getBookmarkedMoviesPaged(), /* page size */ 20).build();
+            }
+    
+            @Override
+            protected Boolean shouldFetch(PagedList<MovieEntity> data) {
+                return false;
+            }
+    
+            @Override
+            protected LiveData<ApiResponse<List<MovieResponse>>> createCall() {
+                return null;
+            }
+    
+            @Override
+            protected void saveCallResult(List<MovieResponse> data) {
+        
+            }
+        }.asLiveData();
     }
     
     @Override
-    public LiveData<Resource<List<TvshowEntity>>> getAllBookmarkedTvShows() {
-        return null;
+    public LiveData<Resource<PagedList<TvshowEntity>>> getAllBookmarkedTvShows() {
+        return new NetworkBoundResource<PagedList<TvshowEntity>, List<TvshowResponse>>(appExecutors) {
+            @Override
+            protected LiveData<PagedList<TvshowEntity>> loadFromDB() {
+                return new LivePagedListBuilder<>(localRepository.getBookmarkedTvshowsPaged(), /* page size */ 20).build();
+            }
+    
+            @Override
+            protected Boolean shouldFetch(PagedList<TvshowEntity> data) {
+                return false;
+            }
+    
+            @Override
+            protected LiveData<ApiResponse<List<TvshowResponse>>> createCall() {
+                return null;
+            }
+    
+            @Override
+            protected void saveCallResult(List<TvshowResponse> data) {
+        
+            }
+        }.asLiveData();
     }
+    
+    
+    
+    
+    
     
     @Override
     public LiveData<Resource<MovieEntity>> getMovie(int movieId) {
-        return null;
+        return new NetworkBoundResource<MovieEntity, MovieResponse>(appExecutors){
+            @Override
+            protected LiveData<MovieEntity> loadFromDB() {
+                return localRepository.getMovieById(movieId);
+            }
+    
+            @Override
+            protected Boolean shouldFetch(MovieEntity data) {
+                return (data==null);
+            }
+    
+            @Override
+            protected LiveData<ApiResponse<MovieResponse>> createCall() {
+                return remoteRepository.getMovieByIdAsLiveData(movieId);
+            }
+    
+            @Override
+            protected void saveCallResult(MovieResponse data) {
+                List<MovieEntity> movieEntities = new ArrayList<>();
+                
+                movieEntities.add(new MovieEntity(
+                        data.getOverview(),
+                        data.getOriginalLanguage(),
+                        data.getOriginalTitle(),
+                        data.isVideo(),
+                        data.getTitle(),
+                        data.getPosterPath(),
+                        data.getBackdropPath(),
+                        data.getReleaseDate(),
+                        data.getVoteAverage(),
+                        data.getPopularity(),
+                        data.getId(),
+                        data.isAdult(),
+                        data.getVoteCount(),
+                        false
+                ));
+    
+                localRepository.insertMovies(movieEntities);
+            }
+        }.asLiveData();
     }
     
     @Override
     public LiveData<Resource<TvshowEntity>> getTvShow(int tvshowId) {
-        return null;
+        return new NetworkBoundResource<TvshowEntity, TvshowResponse>(appExecutors){
+            @Override
+            protected LiveData<TvshowEntity> loadFromDB() {
+                return localRepository.getTvshowById(tvshowId);
+            }
+        
+            @Override
+            protected Boolean shouldFetch(TvshowEntity data) {
+                return (data==null);
+            }
+        
+            @Override
+            protected LiveData<ApiResponse<TvshowResponse>> createCall() {
+                return remoteRepository.getTvshowByIdAsLiveData(tvshowId);
+            }
+        
+            @Override
+            protected void saveCallResult(TvshowResponse data) {
+                List<TvshowEntity> movieEntities = new ArrayList<>();
+            
+                movieEntities.add(new TvshowEntity(
+                        data.getFirstAirDate(),
+                        data.getBackdropPath(),
+                        data.getOverview(),
+                        data.getOriginalLanguage(),
+                        data.getOriginalName(),
+                        data.getPopularity(),
+                        data.getVoteAverage(),
+                        data.getName(),
+                        data.getId(),
+                        data.getVoteCount(),
+                        data.getPosterPath(),
+                        false
+                ));
+            
+                localRepository.insertTvshows(movieEntities);
+            }
+        }.asLiveData();
     }
+    
+    
+    
+    
+    
     
     @Override
     public void setMovieBookmark(MovieEntity movieEntity, boolean state) {

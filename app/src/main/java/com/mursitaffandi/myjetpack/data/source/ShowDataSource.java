@@ -2,6 +2,7 @@ package com.mursitaffandi.myjetpack.data.source;
 
 
 import androidx.lifecycle.LiveData;
+import androidx.paging.PagedList;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.vo.Resource;
@@ -14,9 +15,9 @@ public interface ShowDataSource {
 
     LiveData<Resource<List<TvshowEntity>>> getAllTvShows();
     
-    LiveData<Resource<List<MovieEntity>>> getAllBookmarkedMovies();
+    LiveData<Resource<PagedList<MovieEntity>>> getAllBookmarkedMovies();
 
-    LiveData<Resource<List<TvshowEntity>>> getAllBookmarkedTvShows();
+    LiveData<Resource<PagedList<TvshowEntity>>> getAllBookmarkedTvShows();
 
     LiveData<Resource<MovieEntity>> getMovie(int movieId);
 

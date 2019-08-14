@@ -170,13 +170,17 @@
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/LocalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/LocalRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/MovieEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/MovieEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/di/Injection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/di/Injection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistViewModel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -273,8 +277,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/MovieEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="435">
+              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1088#1089#0" expanded="true" />
@@ -287,82 +291,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/LocalRepository.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+            <state relative-caret-position="480">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
-                <element signature="e#1724#1725#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1832#1833#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/ApiResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/di/Injection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -371,33 +318,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/NetworkBoundResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="512">
+              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2776#2777#0" expanded="true" />
-                <element signature="e#2805#2806#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+            <state relative-caret-position="1230">
+              <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmarked_white.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_black_24dp.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_white.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -405,21 +373,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
+            <state relative-caret-position="837">
+              <caret line="280" column="29" selection-start-line="280" selection-start-column="29" selection-end-line="280" selection-end-column="29" />
               <folding>
-                <element signature="e#2019#2020#0" expanded="true" />
-                <element signature="e#2089#2090#0" expanded="true" />
-                <element signature="e#2178#2179#0" expanded="true" />
-                <element signature="e#2253#2254#0" expanded="true" />
-                <element signature="e#4159#4160#0" expanded="true" />
-                <element signature="e#4228#4229#0" expanded="true" />
-                <element signature="e#4324#4325#0" expanded="true" />
-                <element signature="e#4399#4400#0" expanded="true" />
-                <element signature="e#3424#3425#0" expanded="true" />
-                <element signature="e#3451#3452#0" expanded="true" />
-                <element signature="e#3540#3541#0" expanded="true" />
-                <element signature="e#3567#3568#0" expanded="true" />
+                <element signature="e#8002#8003#0" expanded="true" />
+                <element signature="e#8078#8079#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -451,6 +409,7 @@
       <find>TVShow</find>
       <find>es</find>
       <find>TvShow</find>
+      <find>postValue</find>
     </findStrings>
     <replaceStrings>
       <replace>movie</replace>
@@ -478,11 +437,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/DataDummy.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/utils/LiveDataTestUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/source/ShowRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/tvshow/MovielistViewModelTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/movie/MovielistViewModelTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/tvshow/TvShowlistViewModelTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModelTest.java" />
@@ -499,7 +453,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/vo/Resource.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/AppExecutors.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowListFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_show.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/items_show.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_show_detail.xml" />
@@ -509,8 +462,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/FavoritesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/TabsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/home/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java" />
@@ -526,9 +477,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/LocalRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieListFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowListFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/MovieEntity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java" />
       </list>
     </option>
   </component>
@@ -545,9 +504,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -720,12 +676,13 @@
             <path>
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
@@ -741,6 +698,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1093,11 +1053,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1080" height="1920" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1080" height="1920" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18015414" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27938342" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -1106,11 +1065,11 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Build Variants" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Logcat" order="0" weight="0.53945947" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.12432432" />
+      <window_info anchor="bottom" x="21" y="454" width="1038" height="1011" id="Version Control" order="1" type="FLOATING" weight="0.5641741" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3297328" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.30357143" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" weight="0.38560268" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.38560268" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.3297328" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.22982062" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3290986" />
@@ -1120,10 +1079,20 @@
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info anchor="right" id="Preview" order="5" side_tool="true" weight="0.3290735" />
+      <window_info anchor="right" x="1089" y="27" width="987" height="1028" id="Preview" order="5" side_tool="true" type="FLOATING" weight="0.32851636" />
       <window_info anchor="right" id="Key Promoter X" order="6" />
       <window_info anchor="right" auto_hide="true" id="Json Parser" internal_type="SLIDING" order="7" type="SLIDING" weight="0.32910156" />
     </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1201,75 +1170,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/AppExecutors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_show.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_show_detail.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="e#1243#1283#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/items_show.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_home_white.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="5" selection-start-column="34" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button_disable.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_blue.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_selector.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_white.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmarked_white.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_broken_image_black.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_circle_black.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1280,28 +1180,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detail.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#287#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_black_24dp.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/remove_movie.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModel.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/remove_tvshow_fragment.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fad0f3466109b88052b2a56a7af6b9ee/jars/classes.jar!/com/google/android/material/tabs/TabLayout.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -1370,23 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1408,12 +1274,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1452,46 +1318,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/response/TvshowResponse.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/movies.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/StatusResponse.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/LocalRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+        <state relative-caret-position="465">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/movies.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/NetworkBoundResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2776#2777#0" expanded="true" />
+            <element signature="e#2805#2806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/ApiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1509,53 +1379,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/response/TvshowResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/NetworkBoundResource.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/JsonHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="1442">
+          <caret line="116" column="39" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="116" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/StatusResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/di/Injection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2776#2777#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata/2.0.0/740ce61935bd789380c01178bd8ce402402ebd2f/lifecycle-livedata-2.0.0-sources.jar!/androidx/lifecycle/Transformations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="88" column="15" selection-start-line="69" selection-start-column="12" selection-end-line="88" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/source/FakeShowRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_white.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmarked_white.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detail.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao_Impl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/MovieEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="435">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1088#1089#0" expanded="true" />
@@ -1566,38 +1571,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
+        <state relative-caret-position="837">
+          <caret line="280" column="29" selection-start-line="280" selection-start-column="29" selection-end-line="280" selection-end-column="29" />
           <folding>
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2178#2179#0" expanded="true" />
-            <element signature="e#2253#2254#0" expanded="true" />
-            <element signature="e#4159#4160#0" expanded="true" />
-            <element signature="e#4228#4229#0" expanded="true" />
-            <element signature="e#4324#4325#0" expanded="true" />
-            <element signature="e#4399#4400#0" expanded="true" />
-            <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#3451#3452#0" expanded="true" />
-            <element signature="e#3540#3541#0" expanded="true" />
-            <element signature="e#3567#3568#0" expanded="true" />
+            <element signature="e#8002#8003#0" expanded="true" />
+            <element signature="e#8078#8079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/di/Injection.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        <state relative-caret-position="525">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

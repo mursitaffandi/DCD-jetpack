@@ -48,9 +48,6 @@ public class MovieEntity{
 	@ColumnInfo(name = "bookmarked")
 	private Boolean bookmarked = false;
 	
-	public MovieEntity() {
-	}
-
 	public MovieEntity(
 			String overview,
 			String originalLanguage,
@@ -80,9 +77,7 @@ public class MovieEntity{
 		this.id = id;
 		this.adult = adult;
 		this.voteCount = voteCount;
-		if (bookmarked != null) {
 			this.bookmarked = bookmarked;
-		}
 	}
 
 	public void setOverview(String overview){
