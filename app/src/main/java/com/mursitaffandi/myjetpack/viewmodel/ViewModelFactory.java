@@ -8,6 +8,8 @@ import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.di.Injection;
 import com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieViewModel;
 import com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowViewModel;
+import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieViewModel;
+import com.mursitaffandi.myjetpack.ui.favorite.favoritestvshow.FavoritesTvshowViewModel;
 import com.mursitaffandi.myjetpack.ui.listmovie.MovielistViewModel;
 import com.mursitaffandi.myjetpack.ui.listtvshow.TvShowlistViewModel;
 
@@ -47,6 +49,13 @@ public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
         } else if (modelClass.isAssignableFrom(DetailTvShowViewModel.class)) {
             //noinspection unchecked
             return (T) new DetailTvShowViewModel(mAcademyRepository);
+            
+        } else if (modelClass.isAssignableFrom(FavoritesMovieViewModel.class)) {
+            //noinspection unchecked
+            return (T) new FavoritesMovieViewModel(mAcademyRepository);
+        } else if (modelClass.isAssignableFrom(FavoritesTvshowViewModel.class)) {
+            //noinspection unchecked
+            return (T) new FavoritesTvshowViewModel(mAcademyRepository);
         }
 
         throw new IllegalArgumentException("Unknown ViewModel class: " + modelClass.getName());
