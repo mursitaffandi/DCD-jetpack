@@ -142,5 +142,4 @@ public class DetailTvShowActivity extends AppCompatActivity {
         textDate.setText(tvshowEntity.getFirstAirDate());
         textDescription.setText(tvshowEntity.getOverview());
     }
-    
 }

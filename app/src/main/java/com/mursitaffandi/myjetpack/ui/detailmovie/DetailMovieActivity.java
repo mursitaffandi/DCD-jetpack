@@ -113,6 +113,7 @@ public class DetailMovieActivity extends AppCompatActivity {
         });
         return true;
     }
+    
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_favorite) {
@@ -121,7 +122,6 @@ public class DetailMovieActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    
     private void setBookmarkState(boolean state) {
         if (menu == null) return;
         MenuItem menuItem = menu.findItem(R.id.action_favorite);
@@ -142,5 +142,4 @@ public class DetailMovieActivity extends AppCompatActivity {
         textDate.setText(movie.getReleaseDate());
         textDescription.setText(movie.getOverview());
     }
-   
 }

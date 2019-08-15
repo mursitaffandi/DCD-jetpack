@@ -9,6 +9,7 @@ import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.ui.favorite.FavoritesFragment;
 import com.mursitaffandi.myjetpack.ui.listmovie.MovieListFragment;
 import com.mursitaffandi.myjetpack.ui.listtvshow.TvShowListFragment;
+import com.mursitaffandi.myjetpack.utils.Cons;
 
 public class HomeActivity extends AppCompatActivity {
     private final String SELECTED_MENU = "selected_menu";
@@ -44,15 +45,19 @@ public class HomeActivity extends AppCompatActivity {
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         if (savedInstanceState != null) {
-            savedInstanceState.getInt(SELECTED_MENU);
+            navView.setSelectedItemId(savedInstanceState.getInt(SELECTED_MENU));
+            Cons.selectedNavId = navView.getSelectedItemId();
         } else {
             navView.setSelectedItemId(R.id.action_favorite);
         }
+        if (Cons.selectedNavId==0)Cons.selectedNavId = navView.getSelectedItemId();
+        navView.setSelectedItemId(Cons.selectedNavId);
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(SELECTED_MENU, navView.getSelectedItemId());
+        Cons.selectedNavId = navView.getSelectedItemId();
     }
 }
