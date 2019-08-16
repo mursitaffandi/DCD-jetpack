@@ -17,6 +17,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieActivity;
+import com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowActivity;
 import com.mursitaffandi.myjetpack.utils.Cons;
 
 public class FavoritesTvshowPagedAdapter extends PagedListAdapter<TvshowEntity, FavoritesTvshowPagedAdapter.BookmarkViewHolder> {
@@ -48,8 +49,8 @@ public class FavoritesTvshowPagedAdapter extends PagedListAdapter<TvshowEntity, 
             holder.tvTitle.setText(bookmark.getOriginalName());
             holder.tvDate.setText(bookmark.getFirstAirDate());
             holder.itemView.setOnClickListener(v -> {
-                Intent intent = new Intent(activity, DetailMovieActivity.class);
-                intent.putExtra(DetailMovieActivity.EXTRA_SHOW_ID, bookmark.getId());
+                Intent intent = new Intent(activity, DetailTvShowActivity.class);
+                intent.putExtra(DetailTvShowActivity.EXTRA_SHOW_ID, bookmark.getId());
                 activity.startActivity(intent);
             });
             

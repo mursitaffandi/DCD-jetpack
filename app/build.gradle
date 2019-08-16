@@ -24,6 +24,7 @@ android {
         debug {
             applicationIdSuffix ".debug"
             debuggable true
+            resValue("string", "PORT_NUMBER", "8081")
         }
     }
 }
@@ -82,5 +83,5 @@ dependencies {
     // Dependencies for Idle Resource
     implementation "androidx.test.espresso:espresso-idling-resource:$idleResourceVersion"
 
-
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 }

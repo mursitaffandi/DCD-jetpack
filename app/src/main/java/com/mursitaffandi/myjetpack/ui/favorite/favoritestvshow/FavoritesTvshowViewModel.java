@@ -4,15 +4,14 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 import androidx.paging.PagedList;
 import com.mursitaffandi.myjetpack.data.source.ShowRepository;
-import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.vo.Resource;
 
 public class FavoritesTvshowViewModel extends ViewModel {
     private ShowRepository showRepository;
     
-    public FavoritesTvshowViewModel(ShowRepository mAcademyRepository) {
-        this.showRepository = mAcademyRepository;
+    public FavoritesTvshowViewModel(ShowRepository showRepository) {
+        this.showRepository = showRepository;
     }
     
     LiveData<Resource<PagedList<TvshowEntity>>> getBookmarksPaged() {

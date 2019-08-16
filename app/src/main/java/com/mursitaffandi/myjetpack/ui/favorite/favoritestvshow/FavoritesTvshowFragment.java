@@ -17,9 +17,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.snackbar.Snackbar;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
-import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieFragment;
-import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMoviePagedAdapter;
-import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieViewModel;
 import com.mursitaffandi.myjetpack.viewmodel.ViewModelFactory;
 
 public class FavoritesTvshowFragment extends Fragment {
@@ -68,7 +65,7 @@ public class FavoritesTvshowFragment extends Fragment {
     }
     
     public static Fragment newInstance() {
-        return new FavoritesMovieFragment();
+        return new FavoritesTvshowFragment();
     }
     
     @NonNull
@@ -128,5 +125,4 @@ public class FavoritesTvshowFragment extends Fragment {
             itemTouchHelper.attachToRecyclerView(rvFavorite);
         }
     }
-// TODO : masih salah logic penampilan list favorite di tab Tv, set favorite item detail Tv
 }

@@ -49,7 +49,6 @@ public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
         } else if (modelClass.isAssignableFrom(DetailTvShowViewModel.class)) {
             //noinspection unchecked
             return (T) new DetailTvShowViewModel(mAcademyRepository);
-            
         } else if (modelClass.isAssignableFrom(FavoritesMovieViewModel.class)) {
             //noinspection unchecked
             return (T) new FavoritesMovieViewModel(mAcademyRepository);
@@ -60,5 +59,4 @@ public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 
         throw new IllegalArgumentException("Unknown ViewModel class: " + modelClass.getName());
     }
-
 }
