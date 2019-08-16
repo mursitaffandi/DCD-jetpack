@@ -16,7 +16,7 @@ public class HomeActivity extends AppCompatActivity {
     private BottomNavigationView navView;
 
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = item -> {
+    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = item -> {
         Fragment fragment = null;
         if (item.getItemId() == R.id.action_movie) {
             fragment = MovieListFragment.newInstance();

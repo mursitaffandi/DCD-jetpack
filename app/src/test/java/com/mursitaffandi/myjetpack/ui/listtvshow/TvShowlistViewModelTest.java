@@ -20,18 +20,14 @@ public class TvShowlistViewModelTest {
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
 
-    private ShowRepository showRepository = mock(ShowRepository.class);
+    private final ShowRepository showRepository = mock(ShowRepository.class);
     private TvShowlistViewModel viewModel;
 
     @Before
     public void setUp() {
         viewModel = new TvShowlistViewModel(showRepository);
     }
-
-    @After
-    public void tearDown() {
-    }
-
+    
     @Test
     public void getTvshows() {
         MutableLiveData<List<TvshowEntity>> courses = new MutableLiveData<>();

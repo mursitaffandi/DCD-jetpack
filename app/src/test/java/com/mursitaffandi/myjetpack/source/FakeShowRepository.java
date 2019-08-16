@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import com.mursitaffandi.myjetpack.data.source.ShowDataSource;
-import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.LocalRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
@@ -18,12 +17,11 @@ import java.util.List;
 public class FakeShowRepository implements ShowDataSource {
 
     private volatile static FakeShowRepository INSTANCE = null;
-
-    private final LocalRepository localRepository;
+    
     private final RemoteRepository remoteRepository;
 
     FakeShowRepository(@NonNull LocalRepository localRepository, @NonNull RemoteRepository remoteRepository) {
-        this.localRepository = localRepository;
+        LocalRepository localRepository1 = localRepository;
         this.remoteRepository = remoteRepository;
     }
 
@@ -69,11 +67,7 @@ public class FakeShowRepository implements ShowDataSource {
                 }
                 movieResults.postValue(ret);
             }
-
-            @Override
-            public void onDataNotAvailable() {
-
-            }
+    
         });
         return movieResults;
     }
@@ -105,11 +99,7 @@ public class FakeShowRepository implements ShowDataSource {
                 }
                 tvshowsResult.postValue(ret);
             }
-
-            @Override
-            public void onDataNotAvailable() {
-
-            }
+    
         });
 
         return tvshowsResult;
@@ -143,11 +133,7 @@ public class FakeShowRepository implements ShowDataSource {
 
                 moviesResult.postValue(movieEntity);
             }
-
-            @Override
-            public void onDataNotAvailable() {
-
-            }
+    
         });
         return moviesResult;
     }
@@ -177,11 +163,7 @@ public class FakeShowRepository implements ShowDataSource {
                         );
                 tvshowsResult.postValue(tvshowEntity);
             }
-
-            @Override
-            public void onDataNotAvailable() {
-
-            }
+    
         });
 
         return tvshowsResult;

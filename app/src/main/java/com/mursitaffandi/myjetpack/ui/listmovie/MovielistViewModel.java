@@ -11,18 +11,18 @@ import com.mursitaffandi.myjetpack.vo.Resource;
 import java.util.List;
 
 public class MovielistViewModel extends ViewModel {
-    private ShowRepository movieRepository;
+    private final ShowRepository movieRepository;
     
-    private MutableLiveData<String> mLogin = new MutableLiveData<>();
-    LiveData<Resource<List<MovieEntity>>> movies = Transformations.switchMap(mLogin,
+    private final MutableLiveData<String> mLogin = new MutableLiveData<>();
+    final LiveData<Resource<List<MovieEntity>>> movies = Transformations.switchMap(mLogin,
             data -> movieRepository.getAllMovies());
     
     public MovielistViewModel(ShowRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
     
-    void setUsername(String username) {
-        mLogin.setValue(username);
+    void setUsername() {
+        mLogin.setValue("mursit");
     }
 }
 

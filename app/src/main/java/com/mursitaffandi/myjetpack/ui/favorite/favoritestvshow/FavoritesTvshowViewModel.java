@@ -8,7 +8,7 @@ import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.vo.Resource;
 
 public class FavoritesTvshowViewModel extends ViewModel {
-    private ShowRepository showRepository;
+    private final ShowRepository showRepository;
     
     public FavoritesTvshowViewModel(ShowRepository showRepository) {
         this.showRepository = showRepository;

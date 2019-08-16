@@ -46,7 +46,7 @@ public class MovieEntity{
 	}
 	
 	@ColumnInfo(name = "bookmarked")
-	private boolean bookmarked = false;
+	private boolean bookmarked;
 	
 	public MovieEntity(
 			String overview,

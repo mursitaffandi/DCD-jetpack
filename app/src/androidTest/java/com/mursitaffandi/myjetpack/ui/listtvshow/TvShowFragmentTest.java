@@ -14,13 +14,12 @@ import org.junit.Test;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 public class TvShowFragmentTest {
 
     @Rule
     public ActivityTestRule<SingleFragmentActivity> activityRule = new ActivityTestRule<>(SingleFragmentActivity.class);
-    private TvShowListFragment tvShowListFragment = new TvShowListFragment();
+    private final TvShowListFragment tvShowListFragment = new TvShowListFragment();
 
     @Before
     public void setUp() {

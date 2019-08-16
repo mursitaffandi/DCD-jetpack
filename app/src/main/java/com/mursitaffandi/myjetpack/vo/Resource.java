@@ -3,6 +3,8 @@ package com.mursitaffandi.myjetpack.vo;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.Objects;
+
 import static com.mursitaffandi.myjetpack.vo.Status.*;
 
 
@@ -12,12 +14,12 @@ public class Resource<T> {
     public final Status status;
 
     @Nullable
-    public final String message;
+    private final String message;
 
     @Nullable
     public final T data;
 
-    public Resource(@NonNull Status status, @Nullable T data, @Nullable String message) {
+    private Resource(@NonNull Status status, @Nullable T data, @Nullable String message) {
         this.status = status;
         this.data = data;
         this.message = message;
@@ -49,10 +51,10 @@ public class Resource<T> {
         if (status != resource.status) {
             return false;
         }
-        if (message != null ? !message.equals(resource.message) : resource.message != null) {
+        if (!Objects.equals(message, resource.message)) {
             return false;
         }
-        return data != null ? data.equals(resource.data) : resource.data == null;
+        return Objects.equals(data, resource.data);
     }
 
     @Override

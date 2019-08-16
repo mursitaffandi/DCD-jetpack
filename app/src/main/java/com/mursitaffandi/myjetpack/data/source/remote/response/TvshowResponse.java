@@ -159,7 +159,7 @@ public class TvshowResponse implements Parcelable {
 		dest.writeString(this.posterPath);
 	}
 
-	protected TvshowResponse(Parcel in) {
+	private TvshowResponse(Parcel in) {
 		this.originalName = in.readString();
 		this.name = in.readString();
 		this.popularity = in.readDouble();

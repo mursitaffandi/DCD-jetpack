@@ -2,12 +2,12 @@ package com.mursitaffandi.myjetpack.ui.favorite;
 
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 import com.mursitaffandi.myjetpack.R;
@@ -26,7 +26,7 @@ public class FavoritesFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tabLayout = view.findViewById(R.id.tab_home);
+        TabLayout tabLayout = view.findViewById(R.id.tab_home);
         viewPager = view.findViewById(R.id.vp_container_home);
 
         tabLayout.addTab(tabLayout.newTab().setText("Movies"));
@@ -51,11 +51,10 @@ public class FavoritesFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_favorites, container, false);
     }
-
-
-    private TabLayout tabLayout;
+    
+    
     private ViewPager viewPager;
-    private TabLayout.BaseOnTabSelectedListener tabChangeListener = new TabLayout.OnTabSelectedListener() {
+    private final TabLayout.BaseOnTabSelectedListener tabChangeListener = new TabLayout.OnTabSelectedListener() {
         @Override
         public void onTabSelected(TabLayout.Tab tab) {
             viewPager.setCurrentItem(tab.getPosition(), true);

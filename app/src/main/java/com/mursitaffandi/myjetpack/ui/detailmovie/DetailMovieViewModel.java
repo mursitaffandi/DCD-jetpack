@@ -15,8 +15,8 @@ public class DetailMovieViewModel extends ViewModel {
         this.movieRepository = movieRepository;
     }
     
-    private MutableLiveData<Integer> movieId = new MutableLiveData<>();
-    public LiveData<Resource<MovieEntity>> movieItem =
+    private final MutableLiveData<Integer> movieId = new MutableLiveData<>();
+    public final LiveData<Resource<MovieEntity>> movieItem =
             Transformations.switchMap(movieId,
                     mCourseId -> movieRepository.getMovie(movieId.getValue()));
     

@@ -20,7 +20,7 @@ public class MovieFragmentTest {
 
     @Rule
     public ActivityTestRule<SingleFragmentActivity> activityRule = new ActivityTestRule<>(SingleFragmentActivity.class);
-    private MovieListFragment movieFragment = new MovieListFragment();
+    private final MovieListFragment movieFragment = new MovieListFragment();
 
 
 

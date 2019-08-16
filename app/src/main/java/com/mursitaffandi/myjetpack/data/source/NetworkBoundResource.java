@@ -1,16 +1,18 @@
 package com.mursitaffandi.myjetpack.data.source;
 
+import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 import com.mursitaffandi.myjetpack.data.source.remote.ApiResponse;
 import com.mursitaffandi.myjetpack.utils.AppExecutors;
 import com.mursitaffandi.myjetpack.vo.Resource;
 
-public abstract class NetworkBoundResource<ResultType, RequestType> {
+abstract class NetworkBoundResource<ResultType, RequestType> {
+    
+    private static final String TAG = NetworkBoundResource.class.getSimpleName();
+    private final MediatorLiveData<Resource<ResultType>> result = new MediatorLiveData<>();
 
-    private MediatorLiveData<Resource<ResultType>> result = new MediatorLiveData<>();
-
-    private AppExecutors mExecutors;
+    private final AppExecutors mExecutors;
 
     public NetworkBoundResource(AppExecutors appExecutors) {
 
@@ -28,10 +30,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
             }
         });
     }
-
-    protected void onFetchFailed() {
-    }
-
+    
     protected abstract LiveData<ResultType> loadFromDB();
 
     protected abstract Boolean shouldFetch(ResultType data);
@@ -79,7 +78,11 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
             }
         });
     }
-
+    
+    private void onFetchFailed() {
+        Log.e(TAG, "onFetchFailed: unknow");
+    }
+    
     public LiveData<Resource<ResultType>> asLiveData() {
         return result;
     }

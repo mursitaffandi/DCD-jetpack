@@ -16,13 +16,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
-import com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieActivity;
 import com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowActivity;
 import com.mursitaffandi.myjetpack.utils.Cons;
 
 public class FavoritesTvshowPagedAdapter extends PagedListAdapter<TvshowEntity, FavoritesTvshowPagedAdapter.BookmarkViewHolder> {
     
-    private static DiffUtil.ItemCallback<TvshowEntity> DIFF_CALLBACK =
+    private static final DiffUtil.ItemCallback<TvshowEntity> DIFF_CALLBACK =
             new DiffUtil.ItemCallback<TvshowEntity>() {
                 @Override
                 public boolean areItemsTheSame(@NonNull TvshowEntity oldItem, @NonNull TvshowEntity newItem) {

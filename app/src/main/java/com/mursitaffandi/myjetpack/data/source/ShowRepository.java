@@ -2,7 +2,6 @@ package com.mursitaffandi.myjetpack.data.source;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.paging.LivePagedListBuilder;
 import androidx.paging.PagedList;
 import com.mursitaffandi.myjetpack.data.source.local.LocalRepository;

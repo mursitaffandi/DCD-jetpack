@@ -4,7 +4,8 @@ import androidx.annotation.WorkerThread;
 import androidx.lifecycle.LiveData;
 import androidx.paging.DataSource;
 import androidx.room.*;
-import com.mursitaffandi.myjetpack.data.source.local.entity.*;
+import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
+import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 
 import java.util.List;
 

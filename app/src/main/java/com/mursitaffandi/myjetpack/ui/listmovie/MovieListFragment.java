@@ -26,15 +26,13 @@ public class MovieListFragment extends Fragment {
     private RecyclerView rvMovie;
     private ProgressBar progressBar;
     private MovielistAdapter movielistAdapter;
-    private MovielistViewModel viewModel;
-
+    
     public MovieListFragment() {
         // Required empty public constructor
     }
 
     public static Fragment newInstance() {
-        MovieListFragment fragment = new MovieListFragment();
-        return fragment;
+        return new MovieListFragment();
     }
 
     @Override
@@ -63,11 +61,11 @@ public class MovieListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         if (getActivity() != null) {
             progressBar.setVisibility(View.VISIBLE);
-            viewModel = obtainViewModel(getActivity());
+            MovielistViewModel viewModel = obtainViewModel(getActivity());
 
             movielistAdapter = new MovielistAdapter(getActivity());
     
-            viewModel.setUsername("mursit");
+            viewModel.setUsername();
             viewModel.movies.observe(this, movies -> {
                 if (movies != null) {
                     switch (movies.status) {

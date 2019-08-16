@@ -7,7 +7,6 @@ import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
-import com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieActivity;
 import com.mursitaffandi.myjetpack.utils.EspressoIdlingResource;
 import com.mursitaffandi.myjetpack.utils.FakeDataDummy;
 import org.junit.After;
@@ -21,7 +20,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.*;
 
 public class DetailTvshowActivityTest {
 
-    private TvshowEntity dummyTvshow = FakeDataDummy.generateDummyTvShowEntity().get(0);
+    private final TvshowEntity dummyTvshow = FakeDataDummy.generateDummyTvShowEntity().get(0);
 
     @Rule
     public ActivityTestRule<DetailTvShowActivity> activityRule = new ActivityTestRule<DetailTvShowActivity>(DetailTvShowActivity.class) {

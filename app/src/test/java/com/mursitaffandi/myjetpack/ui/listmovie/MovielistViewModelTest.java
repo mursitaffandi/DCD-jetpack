@@ -20,18 +20,14 @@ public class MovielistViewModelTest {
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
 
-    private ShowRepository showRepository = mock(ShowRepository.class);
+    private final ShowRepository showRepository = mock(ShowRepository.class);
     private MovielistViewModel viewModel;
 
     @Before
     public void setUp() {
         viewModel = new MovielistViewModel(showRepository);
     }
-
-    @After
-    public void tearDown() {
-    }
-
+    
     @Test
     public void getMovies() {
         MutableLiveData<List<MovieEntity>> courses = new MutableLiveData<>();

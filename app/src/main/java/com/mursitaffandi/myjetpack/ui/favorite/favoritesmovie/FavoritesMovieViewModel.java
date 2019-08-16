@@ -8,7 +8,7 @@ import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.vo.Resource;
 
 public class FavoritesMovieViewModel extends ViewModel {
-    private ShowRepository showRepository;
+    private final ShowRepository showRepository;
     
     public FavoritesMovieViewModel(ShowRepository mAcademyRepository) {
         this.showRepository = mAcademyRepository;

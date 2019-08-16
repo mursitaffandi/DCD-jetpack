@@ -18,20 +18,16 @@ public class DetailTvShowViewModelTest {
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
 
     private DetailTvShowViewModel viewModel;
-    private ShowRepository showRepository = mock(ShowRepository.class);
-    private TvshowEntity dummyTvshow = FakeDataDummy.generateDummyTvShowEntity().get(0);
-    private int dummyTvshowId = dummyTvshow.getId();
+    private final ShowRepository showRepository = mock(ShowRepository.class);
+    private final TvshowEntity dummyTvshow = FakeDataDummy.generateDummyTvShowEntity().get(0);
+    private final int dummyTvshowId = dummyTvshow.getId();
 
     @Before
     public void setUp() {
         viewModel = new DetailTvShowViewModel(showRepository);
         viewModel.setTvshowId(dummyTvshowId);
     }
-
-    @After
-    public void tearDown() {
-    }
-
+    
     @Test
     public void getTvShow() {
         MutableLiveData<TvshowEntity> courseEntities = new MutableLiveData<>();

@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mockito;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,25 +27,15 @@ public class ShowRepositoryTest {
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
 
-    private LocalRepository local = Mockito.mock(LocalRepository.class);
-    private RemoteRepository remote = Mockito.mock(RemoteRepository.class);
-    private FakeShowRepository showRepository = new FakeShowRepository(local, remote);
+    private final LocalRepository local = Mockito.mock(LocalRepository.class);
+    private final RemoteRepository remote = Mockito.mock(RemoteRepository.class);
+    private final FakeShowRepository showRepository = new FakeShowRepository(local, remote);
 
-    private ArrayList<MovieResponse> movieResponses = FakeDataDummy.generateDummyMovie();
-    private ArrayList<TvshowResponse> tvshowResponses = FakeDataDummy.generateDummyTvShow();
+    private final ArrayList<MovieResponse> movieResponses = FakeDataDummy.generateDummyMovie();
+    private final ArrayList<TvshowResponse> tvshowResponses = FakeDataDummy.generateDummyTvShow();
 /*    private int movieId = movieResponses.get(0).getId();
     private int tvshowId = tvshowResponses.get(0).getId();*/
-
-    @Before
-    public void setUp() {
-
-    }
-
-    @After
-    public void tearDown() {
-
-    }
-
+    
     @Test
     public void getAllTvShows() {
 

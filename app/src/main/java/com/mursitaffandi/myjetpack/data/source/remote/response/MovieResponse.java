@@ -164,7 +164,7 @@ public class MovieResponse implements Parcelable {
 		dest.writeInt(this.voteCount);
 	}
 
-	protected MovieResponse(Parcel in) {
+	private MovieResponse(Parcel in) {
 		this.overview = in.readString();
 		this.originalLanguage = in.readString();
 		this.originalTitle = in.readString();

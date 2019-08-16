@@ -6,6 +6,7 @@ import com.mursitaffandi.myjetpack.data.source.remote.response.TvshowResponse;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.List;
 
 public class JsonHelper {
 
-    private Application application;
+    private final Application application;
 
     public JsonHelper(Application application) {
         this.application = application;
@@ -80,7 +81,7 @@ public class JsonHelper {
     }
 
     public List<TvshowResponse> loadTvshows() {
-        String fileName = String.format("tvshows.json");
+        String fileName = "tvshows.json";
         ArrayList<TvshowResponse> list = new ArrayList<>();
         try {
 

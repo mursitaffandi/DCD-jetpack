@@ -7,7 +7,7 @@ import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieFrag
 import com.mursitaffandi.myjetpack.ui.favorite.favoritestvshow.FavoritesTvshowFragment;
 
 public class TabsAdapter extends FragmentStatePagerAdapter {
-    private int mNumOfTabs;
+    private final int mNumOfTabs;
 
     public TabsAdapter(FragmentManager fm, int tabCount) {
         super(fm);

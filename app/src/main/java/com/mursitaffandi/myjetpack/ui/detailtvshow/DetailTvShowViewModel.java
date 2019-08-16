@@ -15,8 +15,8 @@ public class DetailTvShowViewModel extends ViewModel {
         this.movieRepository = movieRepository;
     }
     
-    private MutableLiveData<Integer> tvshowId = new MutableLiveData<>();
-    public LiveData<Resource<TvshowEntity>> tvshowItem =
+    private final MutableLiveData<Integer> tvshowId = new MutableLiveData<>();
+    public final LiveData<Resource<TvshowEntity>> tvshowItem =
             Transformations.switchMap(tvshowId,
                     mCourseId -> movieRepository.getTvShow(tvshowId.getValue()));
     

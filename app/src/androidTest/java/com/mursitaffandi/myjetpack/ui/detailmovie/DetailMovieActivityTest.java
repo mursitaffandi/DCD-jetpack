@@ -20,7 +20,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.*;
 
 public class DetailMovieActivityTest {
 
-    private MovieEntity dummyMovie = FakeDataDummy.generateDummyMovieEntity().get(0);
+    private final MovieEntity dummyMovie = FakeDataDummy.generateDummyMovieEntity().get(0);
 
     @Rule
     public ActivityTestRule<DetailMovieActivity> activityRule = new ActivityTestRule<DetailMovieActivity>(DetailMovieActivity.class) {

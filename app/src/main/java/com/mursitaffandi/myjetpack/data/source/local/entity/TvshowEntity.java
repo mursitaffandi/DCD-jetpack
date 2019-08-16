@@ -51,7 +51,7 @@ public class TvshowEntity {
             double popularity,
             double voteAverage,
             String name,
-            @NonNull int id,
+            int id,
             int voteCount,
             String posterPath,
             boolean bookmarked
@@ -134,12 +134,10 @@ public class TvshowEntity {
         return name;
     }
     
-    @NonNull
     public void setId(int id) {
         this.id = id;
     }
     
-    @NonNull
     public int getId() {
         return id;
     }

@@ -12,16 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mursitaffandi.myjetpack.R;
+import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowActivity;
 import com.mursitaffandi.myjetpack.utils.Cons;
-import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TvShowlistAdapter extends RecyclerView.Adapter<TvShowlistAdapter.MovieViewHolder> {
     private final Activity activity;
-    private List<TvshowEntity> mTvShow = new ArrayList<>();
+    private final List<TvshowEntity> mTvShow = new ArrayList<>();
 
     TvShowlistAdapter(Activity activity) {
         this.activity = activity;
@@ -67,9 +67,9 @@ public class TvShowlistAdapter extends RecyclerView.Adapter<TvShowlistAdapter.Mo
     }
 
     class MovieViewHolder extends RecyclerView.ViewHolder {
-        private ImageView imgTvshow;
-        private TextView tvItemTitle;
-        private TextView tvItemTvshowDate;
+        private final ImageView imgTvshow;
+        private final TextView tvItemTitle;
+        private final TextView tvItemTvshowDate;
 
         MovieViewHolder(View itemView) {
             super(itemView);

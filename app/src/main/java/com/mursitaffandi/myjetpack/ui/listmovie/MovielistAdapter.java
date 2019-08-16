@@ -21,7 +21,7 @@ import java.util.List;
 
 public class MovielistAdapter extends RecyclerView.Adapter<MovielistAdapter.MovieViewHolder> {
     private final Activity activity;
-    private List<MovieEntity> mMovie = new ArrayList<>();
+    private final List<MovieEntity> mMovie = new ArrayList<>();
 
     MovielistAdapter(Activity activity) {
         this.activity = activity;

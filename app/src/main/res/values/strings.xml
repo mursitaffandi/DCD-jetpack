@@ -10,7 +10,7 @@
     <string name="message_ok">OK</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail_show">Detail Show</string>
     <string name="bottomnav_favorite">Favorite</string>
+    <string name="releasedate">2019-06-11</string>
 </resources>

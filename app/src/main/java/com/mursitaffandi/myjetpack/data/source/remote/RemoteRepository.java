@@ -3,7 +3,6 @@ package com.mursitaffandi.myjetpack.data.source.remote;
 import android.os.Handler;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.data.source.remote.response.MovieResponse;
 import com.mursitaffandi.myjetpack.data.source.remote.response.TvshowResponse;
 import com.mursitaffandi.myjetpack.utils.EspressoIdlingResource;
@@ -15,7 +14,7 @@ public class RemoteRepository {
     
     private static RemoteRepository INSTANCE;
     private final long SERVICE_LATENCY_IN_MILLIS = 2000;
-    private JsonHelper jsonHelper;
+    private final JsonHelper jsonHelper;
     
     private RemoteRepository(JsonHelper jsonHelper) {
         this.jsonHelper = jsonHelper;

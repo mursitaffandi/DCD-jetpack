@@ -26,16 +26,14 @@ public class TvShowListFragment extends Fragment {
     private RecyclerView rvTvshows;
     private ProgressBar progressBar;
     private TvShowlistAdapter tvShowlistAdapter;
-    private TvShowlistViewModel viewModel;
-
+    
     public TvShowListFragment() {
         // Required empty public constructor
     }
 
 
     public static Fragment newInstance() {
-        TvShowListFragment fragment = new TvShowListFragment();
-        return fragment;
+        return new TvShowListFragment();
     }
 
     @Override
@@ -63,11 +61,11 @@ public class TvShowListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         if (getActivity() != null) {
             progressBar.setVisibility(View.VISIBLE);
-            viewModel = obtainViewModel(getActivity());
+            TvShowlistViewModel viewModel = obtainViewModel(getActivity());
 
             tvShowlistAdapter = new TvShowlistAdapter(getActivity());
             
-            viewModel.setUsername("mursit");
+            viewModel.setUsername();
             viewModel.tvshows.observe(this, movies -> {
                 if (movies != null) {
                     switch (movies.status) {

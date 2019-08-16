@@ -1,14 +1,11 @@
 package com.mursitaffandi.myjetpack.utils;
 
-import com.mursitaffandi.myjetpack.R;
-import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
-import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.data.source.remote.response.MovieResponse;
 import com.mursitaffandi.myjetpack.data.source.remote.response.TvshowResponse;
 
 import java.util.ArrayList;
 
-public class DataDummy {
+class DataDummy {
     public static ArrayList<MovieResponse> generateDummyMovie() {
 
         ArrayList<MovieResponse> movieEntityList = new ArrayList<>();

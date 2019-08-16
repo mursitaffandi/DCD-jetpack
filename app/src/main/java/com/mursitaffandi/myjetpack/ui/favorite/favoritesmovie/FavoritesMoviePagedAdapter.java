@@ -21,7 +21,7 @@ import com.mursitaffandi.myjetpack.utils.Cons;
 
 public class FavoritesMoviePagedAdapter extends PagedListAdapter<MovieEntity, FavoritesMoviePagedAdapter.BookmarkViewHolder> {
     
-    private static DiffUtil.ItemCallback<MovieEntity> DIFF_CALLBACK =
+    private static final DiffUtil.ItemCallback<MovieEntity> DIFF_CALLBACK =
             new DiffUtil.ItemCallback<MovieEntity>() {
                 @Override
                 public boolean areItemsTheSame(@NonNull MovieEntity oldItem, @NonNull MovieEntity newItem) {
