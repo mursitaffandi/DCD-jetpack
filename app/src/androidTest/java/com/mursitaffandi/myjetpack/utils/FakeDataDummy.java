@@ -50,7 +50,8 @@ public class FakeDataDummy {
                 413.258,
                 384018,
                 false,
-                168
+                168,
+                false
         ));
 
         return movieEntityList;
@@ -89,7 +90,8 @@ public class FakeDataDummy {
                 "The Flash",
                 60735,
                 2763,
-                "/fki3kBlwJzFp8QohL43g9ReV455.jpg"
+                "/fki3kBlwJzFp8QohL43g9ReV455.jpg",
+                false
         ));
         return tvShowEntityArrayList;
     }

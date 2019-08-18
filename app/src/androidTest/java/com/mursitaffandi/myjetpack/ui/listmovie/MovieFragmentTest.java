@@ -24,22 +24,22 @@ public class MovieFragmentTest {
 
 
 
-    @Test
-    public void loadMovie() {
-        onView(withId(R.id.rv_list_show)).check(matches(isDisplayed()));
-        onView(withId(R.id.rv_list_show)).check(new RecyclerViewItemCountAssertion(10));
-    }
-
     @Before
     public void setUp() {
         IdlingRegistry.getInstance().register(EspressoIdlingResource.getEspressoIdlingResource());
         activityRule.getActivity().setFragment(movieFragment);
 
     }
-
+    
     @After
     public void tearDown() {
         IdlingRegistry.getInstance().unregister(EspressoIdlingResource.getEspressoIdlingResource());
+    }
+    
+    @Test
+    public void loadMovie() {
+        onView(withId(R.id.rv_list_show)).check(matches(isDisplayed()));
+        onView(withId(R.id.rv_list_show)).check(new RecyclerViewItemCountAssertion(10));
     }
 
 }

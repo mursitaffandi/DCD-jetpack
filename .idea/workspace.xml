@@ -163,9 +163,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa29b2d2-a70e-432f-82db-dc92f374a63f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/utils/InstantAppExecutors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/AShowsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite_movie.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -176,26 +178,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/NetworkBoundResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/NetworkBoundResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/AppExecutors.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/AppExecutors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/source/FakeShowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/source/FakeShowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/source/ShowRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/source/ShowRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowViewModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/listmovie/MovielistViewModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistViewModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistViewModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/ShowsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieFragmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieFragmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowFragmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowFragmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -333,29 +324,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModelTest.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="43" column="5" selection-start-line="17" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="863">
+              <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
               <folding>
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragmentTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModelTest.java">
+        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragmentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="419">
+              <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
               <folding>
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite_movie.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+              <folding>
+                <element signature="e#568#608#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/ShowsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="134" column="68" selection-start-line="134" selection-start-column="68" selection-end-line="134" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1129#1130#0" expanded="true" />
+                <element signature="e#4401#4439#0" expanded="true" />
+                <element signature="e#5544#5582#0" expanded="true" />
+                <element signature="e#7136#7174#0" expanded="true" />
+                <element signature="e#8102#8140#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-end-line="36" selection-end-column="52" />
+              <folding>
+                <element signature="e#614#654#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -364,8 +409,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="layoutResourceFile_vertical" />
         <option value="JUnit4 Test Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -387,15 +432,15 @@
       <find>Bookmark</find>
       <find>FavoritesMoviePagedAdapter</find>
       <find>MovieEntity</find>
-      <find>Movie</find>
       <find>TvShowEntity</find>
       <find>getBookmarkedCoursesPaged</find>
+      <find>Movie</find>
+      <find>FavoritesMovieViewModel</find>
     </findStrings>
     <replaceStrings>
       <replace>Movies</replace>
       <replace>TVShow</replace>
       <replace>TvShow</replace>
-      <replace>Tvshow</replace>
       <replace>movie</replace>
       <replace>Movie</replace>
       <replace>Favorite</replace>
@@ -404,6 +449,7 @@
       <replace>FavoritesTvshowViewModel</replace>
       <replace>tvshow</replace>
       <replace>TvshowEntity</replace>
+      <replace>Tvshow</replace>
       <replace>getAllBookmarkedMovies</replace>
     </replaceStrings>
     <dirStrings>
@@ -423,14 +469,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDatabase.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/room/ShowsDao.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/LocalRepository.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/RemoteRepository.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieListFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvShowActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/Cons.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/home/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_bookmark_selector.xml" />
@@ -438,10 +476,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/BookmarkPagedAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMoviePagedAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/viewmodel/ViewModelFactory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowPagedAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_detail_show.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/items_show.xml" />
@@ -474,6 +510,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/ShowDataSource.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModelTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModelTest.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieFragmentTest.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowFragmentTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite_movie.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/ShowsTest.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragmentTest.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragmentTest.java" />
       </list>
     </option>
   </component>
@@ -515,67 +561,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="favorite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="favorite" type="462c0819:PsiDirectoryNode" />
-              <item name="favoritesmovie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="favorite" type="462c0819:PsiDirectoryNode" />
-              <item name="favoritestvshow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -592,14 +577,6 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="detailtvshow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="favorite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -626,7 +603,13 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="listmovie" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
@@ -634,7 +617,6 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="myjetpack" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="listtvshow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
@@ -652,6 +634,12 @@
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="jetpack" type="1abcf292:AndroidViewProjectNode" />
@@ -679,13 +667,13 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="device.picker.selection" value="902317437d43" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Variables" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.4.1" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1564786241974" />
   </component>
@@ -730,87 +718,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.FavoritesMovieViewModelTest">
-    <configuration name="DetailMovieViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mursitaffandi.myjetpack.ui.detailmovie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mursitaffandi.myjetpack.ui.detailmovie" />
-      <option name="MAIN_CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.detailmovie.DetailMovieViewModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DetailTvShowViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mursitaffandi.myjetpack.ui.detailtvshow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mursitaffandi.myjetpack.ui.detailtvshow" />
-      <option name="MAIN_CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.detailtvshow.DetailTvShowViewModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FavoritesMovieViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie" />
-      <option name="MAIN_CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieViewModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovielistViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mursitaffandi.myjetpack.ui.listmovie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mursitaffandi.myjetpack.ui.listmovie" />
-      <option name="MAIN_CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.listmovie.MovielistViewModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TvShowlistViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mursitaffandi.myjetpack.ui.listtvshow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mursitaffandi.myjetpack.ui.listtvshow" />
-      <option name="MAIN_CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.listtvshow.TvShowlistViewModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Android Instrumented Tests.FavoritesTvshowFragm...">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -871,13 +779,258 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FavoritesMovieFragme..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieFragmentTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FavoritesTvshowFragm..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.favorite.favoritestvshow.FavoritesTvshowFragmentTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieFragmentTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.listmovie.MovieFragmentTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShowsTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.ShowsTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TvShowFragmentTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.mursitaffandi.myjetpack.ui.listtvshow.TvShowFragmentTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.FavoritesMovieViewModelTest" />
-        <item itemvalue="Android JUnit.DetailTvShowViewModelTest" />
-        <item itemvalue="Android JUnit.DetailMovieViewModelTest" />
-        <item itemvalue="Android JUnit.TvShowlistViewModelTest" />
-        <item itemvalue="Android JUnit.MovielistViewModelTest" />
+        <item itemvalue="Android Instrumented Tests.FavoritesTvshowFragm..." />
+        <item itemvalue="Android Instrumented Tests.FavoritesMovieFragme..." />
+        <item itemvalue="Android Instrumented Tests.ShowsTest" />
+        <item itemvalue="Android Instrumented Tests.TvShowFragmentTest" />
+        <item itemvalue="Android Instrumented Tests.MovieFragmentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -910,35 +1063,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DetailTvShowViewModelTest - 2019.08.07 at 05h 31m 28s.xml">
-      <configuration name="DetailTvShowViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="ShowsTest - 2019.08.18 at 22h 40m 39s.xml">
+      <configuration name="ShowsTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="DetailTvShowViewModelTest - 2019.08.07 at 05h 31m 38s.xml">
-      <configuration name="DetailTvShowViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="ShowsTest - 2019.08.18 at 22h 43m 06s.xml">
+      <configuration name="ShowsTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="ShowRepositoryTest - 2019.08.18 at 16h 19m 33s.xml">
-      <configuration name="ShowRepositoryTest" configurationId="AndroidJUnit" />
+    <history-entry file="ShowsTest - 2019.08.18 at 22h 44m 06s.xml">
+      <configuration name="ShowsTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="ShowRepositoryTest - 2019.08.18 at 16h 19m 52s.xml">
-      <configuration name="ShowRepositoryTest" configurationId="AndroidJUnit" />
+    <history-entry file="ShowsTest - 2019.08.18 at 22h 45m 00s.xml">
+      <configuration name="ShowsTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="MovielistViewModelTest - 2019.08.18 at 16h 24m 33s.xml">
-      <configuration name="MovielistViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="FavoritesMovieFragme___ - 2019.08.18 at 22h 47m 13s.xml">
+      <configuration name="FavoritesMovieFragme..." configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="TvShowlistViewModelTest - 2019.08.18 at 16h 28m 08s.xml">
-      <configuration name="TvShowlistViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="FavoritesMovieFragme___ - 2019.08.18 at 22h 48m 26s.xml">
+      <configuration name="FavoritesMovieFragme..." configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="TvShowlistViewModelTest - 2019.08.18 at 16h 28m 21s.xml">
-      <configuration name="TvShowlistViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="ShowsTest - 2019.08.18 at 22h 49m 21s.xml">
+      <configuration name="ShowsTest" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="DetailMovieViewModelTest - 2019.08.18 at 16h 31m 50s.xml">
-      <configuration name="DetailMovieViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="FavoritesMovieFragme___ - 2019.08.18 at 22h 49m 34s.xml">
+      <configuration name="FavoritesMovieFragme..." configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="DetailTvShowViewModelTest - 2019.08.18 at 16h 36m 17s.xml">
-      <configuration name="DetailTvShowViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="FavoritesMovieFragme___ - 2019.08.18 at 22h 50m 34s.xml">
+      <configuration name="FavoritesMovieFragme..." configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="FavoritesMovieViewModelTest - 2019.08.18 at 16h 41m 55s.xml">
-      <configuration name="FavoritesMovieViewModelTest" configurationId="AndroidJUnit" />
+    <history-entry file="FavoritesTvshowFragm___ - 2019.08.18 at 22h 50m 58s.xml">
+      <configuration name="FavoritesTvshowFragm..." configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -962,14 +1115,14 @@
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Build Variants" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Logcat" order="0" weight="0.39620537" />
+      <window_info anchor="bottom" id="Logcat" order="0" weight="0.3956757" />
       <window_info anchor="bottom" x="21" y="454" width="1038" height="1011" id="Version Control" order="1" type="FLOATING" weight="0.5641741" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3297328" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.1427027" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.24432433" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32979912" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.27027026" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.3297328" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.3297328" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3708108" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32868305" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32756695" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32979912" />
@@ -978,7 +1131,7 @@
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info anchor="right" x="1089" y="27" width="987" height="1028" id="Preview" order="5" side_tool="true" type="FLOATING" weight="0.32851636" />
+      <window_info anchor="right" x="1078" y="365" width="92" height="38" id="Preview" order="5" side_tool="true" type="FLOATING" weight="0.32851636" />
       <window_info anchor="right" id="Key Promoter X" order="6" />
       <window_info anchor="right" auto_hide="true" id="Json Parser" internal_type="SLIDING" order="7" type="SLIDING" weight="0.32910156" />
     </layout>
@@ -1074,167 +1227,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowlistAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.paging/paging-runtime/2.1.0/135a966f96c190ee634f43b783f3483291878caa/paging-runtime-2.1.0-sources.jar!/androidx/paging/PagedListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="132" column="30" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/local/entity/TvshowEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/viewmodel/ViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMoviePagedAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="70" column="15" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/home/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/utils/Cons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2810#2831#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowPagedAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_detail_show.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/items_show.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/backup_descriptor.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/FavoritesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/data/source/remote/ApiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1309,13 +1303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1485,24 +1472,213 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieViewModelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="43" column="5" selection-start-line="17" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="404">
+          <caret line="43" column="5" selection-start-line="17" selection-start-column="2" selection-end-line="43" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#795#796#0" expanded="true" />
             <element signature="e#869#870#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowViewModelTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/utils/FakeDataDummy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="320">
+          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/utils/RecyclerViewItemCountAssertion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/detailtvshow/DetailTvshowActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listmovie/MovieFragmentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/listtvshow/TvShowFragmentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/home/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_show_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="73" lean-forward="true" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+          <folding>
+            <element signature="e#1239#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/detailmovie/DetailMovieActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_show.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="27" column="32" lean-forward="true" selection-end-line="37" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/FavoritesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="e#614#654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list_favorite_movie.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding>
+            <element signature="e#568#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/ShowsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="134" column="68" selection-start-line="134" selection-start-column="68" selection-end-line="134" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#4401#4439#0" expanded="true" />
+            <element signature="e#5544#5582#0" expanded="true" />
+            <element signature="e#7136#7174#0" expanded="true" />
+            <element signature="e#8102#8140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritesmovie/FavoritesMovieFragmentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/mursitaffandi/myjetpack/ui/favorite/favoritestvshow/FavoritesTvshowFragmentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

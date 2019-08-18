@@ -14,6 +14,7 @@ import org.junit.Test;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 public class TvShowFragmentTest {
 
@@ -35,7 +36,7 @@ public class TvShowFragmentTest {
 
     @Test
     public void loadTvshow() {
-        onView(withId(R.id.rv_tvshow)).check(matches(isDisplayed()));
-        onView(withId(R.id.rv_tvshow)).check(new RecyclerViewItemCountAssertion(10));
+        onView(withId(R.id.rv_list_show)).check(matches(isDisplayed()));
+        onView(withId(R.id.rv_list_show)).check(new RecyclerViewItemCountAssertion(10));
     }
 }
