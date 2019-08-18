@@ -15,9 +15,9 @@ public interface ShowDataSource {
 
     LiveData<Resource<List<TvshowEntity>>> getAllTvShows();
     
-    LiveData<Resource<PagedList<MovieEntity>>> getAllBookmarkedMovies();
+    LiveData<Resource<PagedList<MovieEntity>>> getAllBookmarkedMoviesPaged();
 
-    LiveData<Resource<PagedList<TvshowEntity>>> getAllBookmarkedTvShows();
+    LiveData<Resource<PagedList<TvshowEntity>>> getAllBookmarkedTvShowsPaged();
 
     LiveData<Resource<MovieEntity>> getMovie(int movieId);
 

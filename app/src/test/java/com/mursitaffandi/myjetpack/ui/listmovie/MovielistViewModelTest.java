@@ -6,39 +6,43 @@ import androidx.lifecycle.Observer;
 import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.utils.FakeDataDummy;
+import com.mursitaffandi.myjetpack.vo.Resource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.util.List;
 
 import static org.mockito.Mockito.*;
 
 public class MovielistViewModelTest {
-
+    
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
-
-    private final ShowRepository showRepository = mock(ShowRepository.class);
+    
     private MovielistViewModel viewModel;
-
+    private ShowRepository academyRepository = mock(ShowRepository.class);
+    
     @Before
     public void setUp() {
-        viewModel = new MovielistViewModel(showRepository);
+        viewModel = new MovielistViewModel(academyRepository);
     }
     
     @Test
     public void getMovies() {
-        MutableLiveData<List<MovieEntity>> courses = new MutableLiveData<>();
-        courses.setValue(FakeDataDummy.generateDummyMovieEntity());
-
-        when(showRepository.getAllMovies()).thenReturn(courses);
-
-        Observer<List<MovieEntity>> observer = mock(Observer.class);
-
-        viewModel.getMovies().observeForever(observer);
-
-        verify(showRepository).getAllMovies();
+        MutableLiveData<Resource<List<MovieEntity>>> dummyMovies = new MutableLiveData<>();
+        dummyMovies.setValue(Resource.success(FakeDataDummy.generateDummyMovieEntity()));
+        
+        when(academyRepository.getAllMovies()).thenReturn(dummyMovies);
+        
+        Observer<Resource<List<MovieEntity>>> observer = Mockito.mock(Observer.class);
+        
+        viewModel.setUsername();
+        
+        viewModel.movies.observeForever(observer);
+        
+        verify(academyRepository).getAllMovies();
     }
 }

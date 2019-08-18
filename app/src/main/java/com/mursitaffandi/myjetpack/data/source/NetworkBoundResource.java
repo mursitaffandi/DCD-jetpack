@@ -7,7 +7,7 @@ import com.mursitaffandi.myjetpack.data.source.remote.ApiResponse;
 import com.mursitaffandi.myjetpack.utils.AppExecutors;
 import com.mursitaffandi.myjetpack.vo.Resource;
 
-abstract class NetworkBoundResource<ResultType, RequestType> {
+public abstract class NetworkBoundResource<ResultType, RequestType> {
     
     private static final String TAG = NetworkBoundResource.class.getSimpleName();
     private final MediatorLiveData<Resource<ResultType>> result = new MediatorLiveData<>();

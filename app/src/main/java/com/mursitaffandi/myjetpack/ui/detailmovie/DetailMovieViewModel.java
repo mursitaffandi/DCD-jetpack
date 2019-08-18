@@ -20,11 +20,6 @@ public class DetailMovieViewModel extends ViewModel {
             Transformations.switchMap(movieId,
                     mCourseId -> movieRepository.getMovie(movieId.getValue()));
     
-    public Integer getMovieId() {
-        if (movieId.getValue() == null) return null;
-        return movieId.getValue();
-    }
-    
     public void setMovieId(Integer movieId) {
         this.movieId.setValue(movieId);
     }

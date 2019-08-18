@@ -15,7 +15,7 @@ public class FavoritesTvshowViewModel extends ViewModel {
     }
     
     LiveData<Resource<PagedList<TvshowEntity>>> getBookmarksPaged() {
-        return showRepository.getAllBookmarkedTvShows();
+        return showRepository.getAllBookmarkedTvShowsPaged();
     }
     
     void setBookmark(TvshowEntity movieEntity) {

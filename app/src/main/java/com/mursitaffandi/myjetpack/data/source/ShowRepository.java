@@ -145,7 +145,7 @@ public class ShowRepository implements ShowDataSource {
     
     
     @Override
-    public LiveData<Resource<PagedList<MovieEntity>>> getAllBookmarkedMovies() {
+    public LiveData<Resource<PagedList<MovieEntity>>> getAllBookmarkedMoviesPaged() {
         return new NetworkBoundResource<PagedList<MovieEntity>, List<MovieResponse>>(appExecutors) {
             @Override
             protected LiveData<PagedList<MovieEntity>> loadFromDB() {
@@ -170,7 +170,7 @@ public class ShowRepository implements ShowDataSource {
     }
     
     @Override
-    public LiveData<Resource<PagedList<TvshowEntity>>> getAllBookmarkedTvShows() {
+    public LiveData<Resource<PagedList<TvshowEntity>>> getAllBookmarkedTvShowsPaged() {
         return new NetworkBoundResource<PagedList<TvshowEntity>, List<TvshowResponse>>(appExecutors) {
             @Override
             protected LiveData<PagedList<TvshowEntity>> loadFromDB() {

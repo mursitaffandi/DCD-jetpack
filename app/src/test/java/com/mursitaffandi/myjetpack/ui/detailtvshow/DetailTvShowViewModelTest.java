@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer;
 import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.utils.FakeDataDummy;
+import com.mursitaffandi.myjetpack.vo.Resource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -16,28 +17,29 @@ import static org.mockito.Mockito.*;
 public class DetailTvShowViewModelTest {
     @Rule
     public InstantTaskExecutorRule instantTaskExecutorRule = new InstantTaskExecutorRule();
-
+    
     private DetailTvShowViewModel viewModel;
-    private final ShowRepository showRepository = mock(ShowRepository.class);
-    private final TvshowEntity dummyTvshow = FakeDataDummy.generateDummyTvShowEntity().get(0);
-    private final int dummyTvshowId = dummyTvshow.getId();
-
+    private ShowRepository showRepository = mock(ShowRepository.class);
+    private TvshowEntity dummyCourse = FakeDataDummy.generateDummyTvShowEntity().get(0);
+    private int movieId = dummyCourse.getId();
+    
     @Before
     public void setUp() {
         viewModel = new DetailTvShowViewModel(showRepository);
-        viewModel.setTvshowId(dummyTvshowId);
+        viewModel.setTvshowId(movieId);
+        viewModel.setBookmark();
     }
     
     @Test
-    public void getTvShow() {
-        MutableLiveData<TvshowEntity> courseEntities = new MutableLiveData<>();
-        courseEntities.setValue(dummyTvshow);
-
-        when(showRepository.getTvShow(dummyTvshowId)).thenReturn(courseEntities);
-
-        Observer<TvshowEntity> observer = mock(Observer.class);
-        viewModel.getTvShow().observeForever(observer);
-
-        verify(showRepository).getTvShow(dummyTvshowId);
+    public void getTvShowDetail() {
+        MutableLiveData<Resource<TvshowEntity>> tvshow = new MutableLiveData<>();
+        tvshow.setValue(Resource.success(FakeDataDummy.getTvshow(movieId)));
+        
+        when(showRepository.getTvShow(movieId)).thenReturn(tvshow);
+        
+        Observer<Resource<TvshowEntity>> observer = mock(Observer.class);
+        viewModel.tvshowItem.observeForever(observer);
+        
+        verify(showRepository).getTvShow(movieId);
     }
 }

@@ -20,11 +20,6 @@ public class DetailTvShowViewModel extends ViewModel {
             Transformations.switchMap(tvshowId,
                     mCourseId -> movieRepository.getTvShow(tvshowId.getValue()));
     
-    public Integer getTvshowId() {
-        if (tvshowId.getValue() == null) return null;
-        return tvshowId.getValue();
-    }
-    
     public void setTvshowId(Integer tvshowId) {
         this.tvshowId.setValue(tvshowId);
     }

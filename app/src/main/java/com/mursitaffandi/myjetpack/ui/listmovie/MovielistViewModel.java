@@ -11,7 +11,7 @@ import com.mursitaffandi.myjetpack.vo.Resource;
 import java.util.List;
 
 public class MovielistViewModel extends ViewModel {
-    private final ShowRepository movieRepository;
+    private ShowRepository movieRepository;
     
     private final MutableLiveData<String> mLogin = new MutableLiveData<>();
     final LiveData<Resource<List<MovieEntity>>> movies = Transformations.switchMap(mLogin,
@@ -21,7 +21,7 @@ public class MovielistViewModel extends ViewModel {
         this.movieRepository = movieRepository;
     }
     
-    void setUsername() {
+    public void setUsername() {
         mLogin.setValue("mursit");
     }
 }
