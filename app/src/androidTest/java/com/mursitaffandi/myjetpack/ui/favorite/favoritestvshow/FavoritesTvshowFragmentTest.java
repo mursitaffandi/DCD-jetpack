@@ -4,7 +4,6 @@ import androidx.test.espresso.IdlingRegistry;
 import androidx.test.rule.ActivityTestRule;
 import com.mursitaffandi.myjetpack.R;
 import com.mursitaffandi.myjetpack.testing.SingleFragmentActivity;
-import com.mursitaffandi.myjetpack.ui.favorite.favoritesmovie.FavoritesMovieFragment;
 import com.mursitaffandi.myjetpack.utils.EspressoIdlingResource;
 import com.mursitaffandi.myjetpack.utils.RecyclerViewItemCountAssertion;
 import org.junit.After;

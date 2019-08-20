@@ -7,7 +7,7 @@ import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.utils.FakeDataDummy;
 import com.mursitaffandi.myjetpack.vo.Resource;
-import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -41,5 +41,9 @@ public class DetailMovieViewModelTest {
         viewModel.movieItem.observeForever(observer);
         
         verify(showRepository).getMovie(movieId);
+    
+        verify(observer).onChanged(movie.getValue());
+    
+        Assert.assertEquals(movie.getValue() , viewModel.movieItem.getValue());
     }
 }

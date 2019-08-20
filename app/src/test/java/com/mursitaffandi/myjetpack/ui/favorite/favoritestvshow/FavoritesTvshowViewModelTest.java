@@ -7,6 +7,7 @@ import androidx.paging.PagedList;
 import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.vo.Resource;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -28,17 +29,22 @@ public class FavoritesTvshowViewModelTest {
     @Test
     public void getBookmark() {
         
-        MutableLiveData<Resource<PagedList<TvshowEntity>>> dummyCourse = new MutableLiveData<>();
+        MutableLiveData<Resource<PagedList<TvshowEntity>>> favoritetvshowsPaged = new MutableLiveData<>();
         PagedList<TvshowEntity> pagedList = mock(PagedList.class);
-        dummyCourse.setValue(Resource.success(pagedList));
+        favoritetvshowsPaged.setValue(Resource.success(pagedList));
         
-        when(showRepository.getAllBookmarkedTvShowsPaged()).thenReturn(dummyCourse);
+        when(showRepository.getAllBookmarkedTvShowsPaged()).thenReturn(favoritetvshowsPaged);
         
         Observer<Resource<PagedList<TvshowEntity>>> observer = mock(Observer.class);
         
         viewModel.getBookmarksPaged().observeForever(observer);
         
         verify(showRepository).getAllBookmarkedTvShowsPaged();
-        
+    
+        verify(observer).onChanged(favoritetvshowsPaged.getValue());
+    
+        Assert.assertEquals(favoritetvshowsPaged.getValue() , viewModel.getBookmarksPaged().getValue());
+    
+    
     }
 }

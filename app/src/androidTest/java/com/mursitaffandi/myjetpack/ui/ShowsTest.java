@@ -20,6 +20,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.*;
 import static org.hamcrest.core.AllOf.allOf;
 
 public class ShowsTest {
+//    TODO : Run this test before FavoritesTvshowFragmentTest and FavoritesMovieFragmentTest
     @Rule
     public ActivityTestRule<HomeActivity> activityRule = new ActivityTestRule<>(HomeActivity.class);
 
@@ -107,22 +108,9 @@ public class ShowsTest {
 //        mengklik tombol toolbar back to home untuk kembali ke halaman home TvShow
         onView(withContentDescription(R.string.abc_action_bar_up_description)).perform(click());
         
-        /*
-        try {
-            onView(withId(R.id.frame_container)).check(matches(isDisplayed()));
-
-            onView(withId(R.id.rv_module)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
-
-            onView(withId(R.id.web_view)).check(matches(isDisplayed()));
-        } catch (NoMatchingViewException e) {
-            onView(withId(R.id.frame_list)).check(matches(isDisplayed()));
-
-            onView(withId(R.id.rv_module)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
-
-            onView(withId(R.id.web_view)).check(matches(isDisplayed()));
-        }
-        */
     
+        
+//        Mengset favorite lagi untuk persiapan test FavoritesMovieFragmentTest dan FavoritesTvshowFragmentTest
         //        mengklik bottom navigation Movie
         onView(withId(R.id.action_movie)).perform(click());
 //    mengcek list movie ditampilkan

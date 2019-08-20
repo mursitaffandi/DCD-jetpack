@@ -7,7 +7,7 @@ import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.TvshowEntity;
 import com.mursitaffandi.myjetpack.utils.FakeDataDummy;
 import com.mursitaffandi.myjetpack.vo.Resource;
-import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -41,5 +41,9 @@ public class DetailTvShowViewModelTest {
         viewModel.tvshowItem.observeForever(observer);
         
         verify(showRepository).getTvShow(movieId);
+    
+        verify(observer).onChanged(tvshow.getValue());
+    
+        Assert.assertEquals(tvshow.getValue() , viewModel.tvshowItem.getValue());
     }
 }

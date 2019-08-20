@@ -7,7 +7,7 @@ import com.mursitaffandi.myjetpack.data.source.ShowRepository;
 import com.mursitaffandi.myjetpack.data.source.local.entity.MovieEntity;
 import com.mursitaffandi.myjetpack.utils.FakeDataDummy;
 import com.mursitaffandi.myjetpack.vo.Resource;
-import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -32,10 +32,10 @@ public class MovielistViewModelTest {
     
     @Test
     public void getMovies() {
-        MutableLiveData<Resource<List<MovieEntity>>> dummyMovies = new MutableLiveData<>();
-        dummyMovies.setValue(Resource.success(FakeDataDummy.generateDummyMovieEntity()));
+        MutableLiveData<Resource<List<MovieEntity>>> dummyMoviesPaged = new MutableLiveData<>();
+        dummyMoviesPaged.setValue(Resource.success(FakeDataDummy.generateDummyMovieEntity()));
         
-        when(academyRepository.getAllMovies()).thenReturn(dummyMovies);
+        when(academyRepository.getAllMovies()).thenReturn(dummyMoviesPaged);
         
         Observer<Resource<List<MovieEntity>>> observer = Mockito.mock(Observer.class);
         
@@ -44,5 +44,11 @@ public class MovielistViewModelTest {
         viewModel.movies.observeForever(observer);
         
         verify(academyRepository).getAllMovies();
+        
+        verify(observer).onChanged(dummyMoviesPaged.getValue());
+    
+        Assert.assertEquals(dummyMoviesPaged.getValue() , viewModel.movies.getValue());
+    
+    
     }
 }
